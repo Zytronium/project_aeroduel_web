@@ -89,7 +89,15 @@ h6 {
 }
 
 section {
-    @apply px-4 py-2 flex flex-col items-center border-b-2 border-maroon;
+    @apply px-4 md:px-14 lg:px-16 xl:px-20 py-2 flex flex-col items-center border-b-2 border-maroon;
+}
+
+section p, section small, section strong, section a {
+    @apply text-start md:w-[90%] lg:w-[80%] xl:w-[66%];
+}
+
+section p {
+    @apply mb-4;
 }
 
 @font-face {
@@ -100,6 +108,14 @@ section {
 @font-face {
     font-family: 'Architype';
     src: url('/fonts/ArchitypeAubette.ttf');
+}
+
+.title {
+    @apply text-7xl font-bold text-center mb-1;
+}
+
+.subtitle {
+    @apply font-semibold text-center mb-4;
 }
 
 .btn {

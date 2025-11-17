@@ -9,7 +9,7 @@ export function HeroSection() {
       <div className="z-1 px-4 py-2 flex flex-col items-center">
         <h1 className="text-accent text-shadow-lg title flex items-center tracking-wider font-thin">
           AER
-          <Image src={Logo} alt="O" className="inline-block h-[1em] w-auto mb-3" />
+          <Image src={Logo} alt="O" className="inline-block h-[1.6em] w-auto mb-3" />
           DUEL
         </h1>
         <p className="subtitle">

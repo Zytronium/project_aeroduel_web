@@ -1,4 +1,4 @@
-import Logo from "../../../public/logo.png"
+import Logo from "../../../public/two-jets-logo.svg"
 import Image from "next/image";
 
 export function HeroSection() {
@@ -7,11 +7,7 @@ export function HeroSection() {
       <div
         className="fixed top-0 left-0 w-screen h-screen bg-gradient-to-br from-darkernavy via-darkernavy/20 to-navy"></div>
       <div className="z-1 px-4 py-2 flex flex-col items-center">
-        <h1 className="text-accent text-shadow-lg title flex items-center tracking-wider font-thin">
-          AERO
-          <Image src={Logo} alt="O" className="inline-block h-[1.6em] w-auto mb-3" />
-          DUEL
-        </h1>
+        <Image src={Logo} width={1000} alt="Aeroduel Logo"/>
         <p className="subtitle text-gold">
           The future of RC aerial combat. Real FPV immersion. Real engineering.
         </p>

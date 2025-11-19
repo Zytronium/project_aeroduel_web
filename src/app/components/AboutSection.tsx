@@ -1,6 +1,8 @@
+import Image from "next/image";
+
 export const AboutSection = () => {
   return (
-    <section id="about" className="bg-background-2 text-foreground-2">
+    <section id="about" className="bg-background text-foreground">
       <h2 className="text-sky-200 text-shadow-lg">What is Aeroduel?</h2>
       <p>
         Aeroduel merges cutting-edge software engineering with RC model aircraft
@@ -25,6 +27,12 @@ export const AboutSection = () => {
       <small>Please note that all pilots must be experienced and confident with
       their aircraft of choice. Pilots must follow all AMA safety guidelines and
       local laws.</small>
+
+      <div className="flex flex-row gap-4 my-4">
+        <img src="/placeholder_img.png" alt="Placeholder" className="w-1/2 object-contain" />
+        <img src="/placeholder_img.png" alt="Placeholder" className="w-1/2 object-contain" />
+      </div>
+
     </section>
   );
 };

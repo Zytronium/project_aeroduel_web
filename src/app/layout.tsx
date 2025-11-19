@@ -25,7 +25,7 @@ function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center h-16">
           <div className="flex-shrink-0">
-            <Image src={Logo} alt="Logo" height={56} className="block" />
+            <Image src={Logo} alt="Logo" height={56}/>
           </div>
 
           <div className="hidden md:flex gap-8 ml-auto">

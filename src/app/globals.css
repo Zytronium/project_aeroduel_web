@@ -68,7 +68,7 @@ h1 {
 }
 
 h2 {
-    @apply text-3xl font-semibold my-3;
+    @apply text-4xl font-semibold my-3;
 }
 
 h3 {
@@ -88,7 +88,11 @@ h6 {
 }
 
 section {
-    @apply px-4 md:px-14 lg:px-16 xl:px-20 py-2 flex flex-col items-center border-b-2 border-maroon;
+    @apply px-4 md:px-14 lg:px-16 xl:px-20 py-2 flex flex-col items-center border-b-2 border-maroon pt-15;
+}
+
+section h2 {
+    @apply text-center mb-8;
 }
 
 section p, section small, section strong, section a {

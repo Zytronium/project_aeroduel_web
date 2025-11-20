@@ -2,10 +2,7 @@ import { HeroSection } from "@/app/components/HeroSection";
 import { AboutSection } from "@/app/components/AboutSection";
 import { DownloadSection } from "@/app/components/DownloadSection";
 import { FeaturesSection } from "@/app/components/FeaturesSection";
-
-function HowItWorksSection() {
-  return null;
-}
+import { HowItWorksSection } from "@/app/components/HowItWorksSection";
 
 function TechStackSection() {
   return null;

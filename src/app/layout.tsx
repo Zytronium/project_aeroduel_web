@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Logo from "../../public/aero-duel-jet-left-logo.svg"
+import Logo from "../../public/aero-duel-jet-left-logo.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,7 +17,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Aeroduel: RC Aerial Combat",
-  description: "Aeroduel is a cutting-edge RC aerial combat system. Real dogfights. Real FPV immersion. Real engineering.",
+  description:
+    "Aeroduel is a cutting-edge RC aerial combat system. Real dogfights. Real FPV immersion. Real engineering.",
 };
 
 function Header() {
@@ -25,15 +27,33 @@ function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center h-16">
           <div className="flex-shrink-0">
-            <Image src={Logo} alt="Logo" height={56}/>
+            <Link href="/">
+              <Image src={Logo} alt="Logo" height={56} />
+            </Link>
           </div>
 
           <div className="hidden md:flex gap-8 ml-auto">
-            <a href="#about" className="hover:text-teal transition">About</a>
-            <a href="#features" className="hover:text-teal transition">Features</a>
-            <a href="#tech-stack" className="hover:text-teal transition">Tech Stack</a>
-            <a href="#roadmap" className="hover:text-teal transition">Roadmap</a>
-            <a href="#download" className="hover:text-teal transition">Download</a>
+            <Link href="/" className="hover:text-teal transition">
+              Home
+            </Link>
+            <a href="#about" className="hover:text-teal transition">
+              About
+            </a>
+            <a href="#features" className="hover:text-teal transition">
+              Features
+            </a>
+            <Link href="/how-it-works" className="hover:text-teal transition">
+              How It Works
+            </Link>
+            <a href="#tech-stack" className="hover:text-teal transition">
+              Tech Stack
+            </a>
+            <a href="#roadmap" className="hover:text-teal transition">
+              Roadmap
+            </a>
+            <a href="#download" className="hover:text-teal transition">
+              Download
+            </a>
           </div>
         </div>
       </div>
@@ -52,15 +72,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-    <body
-      className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-    >
-    <Header />
-    <main className="flex justify-center flex-col text-foreground bg-background pt-14">
-      {children}
-    </main>
-    <Footer />
-    </body>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <Header />
+        <main className="flex justify-center flex-col text-foreground bg-background pt-14">
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   );
 }

@@ -36,7 +36,10 @@ export function HowItWorksSection() {
       </section>
 
       {/* Arduino Section */}
-      <section className="bg-darkernavy text-skyblue py-16 px-4 md:px-14 lg:px-16 xl:px-20">
+      <section
+        className="text-skyblue py-16 px-4 md:px-14 lg:px-16 xl:px-20
+             bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)]"
+      >
         <div className="max-w-6xl mx-auto mb-12">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <Image

@@ -8,11 +8,11 @@ export function HowItWorksSection() {
         <div className="flex flex-col items-center justify-center gap-8 max-w-7xl mx-auto mb-12">
           <div className="relative flex justify-center w-full">
             <Image
-              src="/placeholder_img.png"
+              src="/images/plane-right.svg"
               alt="jet with crosshair"
-              width={800}
-              height={800}
-              className="w-3/4 md:w-2/3 object-contain mx-auto"
+              width={400}
+              height={400}
+              className="max-w-[475px] w-full object-contain"
             />
           </div>
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-center font-xirod">
@@ -27,11 +27,11 @@ export function HowItWorksSection() {
           FLOW CHART
         </h2>
         <Image
-          src="/placeholder_img.png"
+          src="/images/flow-chart-placeholder.svg"
           alt="flow chart"
           width={800}
-          height={400}
-          className="w-1/2 object-contain mx-auto mb-12"
+          height={800}
+          className="max-w-[800px] w-full object-contain mb-12"
         />
       </section>
 
@@ -40,11 +40,11 @@ export function HowItWorksSection() {
         <div className="max-w-6xl mx-auto mb-12">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <Image
-              src="/placeholder_img.png"
+              src="/images/arduino-circle.svg"
               alt="Arduino Board"
               width={400}
               height={400}
-              className="w-1/2 object-contain"
+              className="max-w-[475px] w-full object-contain"
             />
             <div className="flex-1 text-right">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod">
@@ -66,11 +66,11 @@ export function HowItWorksSection() {
         <div className="max-w-6xl mx-auto mb-12">
           <div className="flex flex-col md:flex-row-reverse items-center gap-8">
             <Image
-              src="/placeholder_img.png"
+              src="/images/lora-receiver-circle.svg"
               alt="lora wifi receiver"
               width={400}
               height={400}
-              className="w-1/2 object-contain"
+              className="max-w-[400px] w-full object-contain"
             />
             <div className="flex-1 text-left">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod">
@@ -92,11 +92,11 @@ export function HowItWorksSection() {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
             <Image
-              src="/placeholder_img.png"
+              src="/images/camera-circle.svg"
               alt="camera"
               width={400}
               height={400}
-              className="w-1/2 object-contain"
+              className="max-w-[400px] w-full object-contain"
             />
             <div className="flex-1 text-right">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod">

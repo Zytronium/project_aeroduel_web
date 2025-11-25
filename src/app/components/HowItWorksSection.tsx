@@ -22,10 +22,10 @@ export function HowItWorksSection() {
       </section>
 
       {/* Flow Chart Section */}
-      <section className="bg-teal text-navy py-16 px-4 md:px-14 lg:px-16 xl:px-20">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 font-xirod">
+      <section className="bg-[linear-gradient(-180deg,#7bf8ff,#ffffff,#7bf8ff)] text-navy py-16 px-4 md:px-14 lg:px-16 xl:px-20">
+        <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 font-xirod">
           FLOW CHART
-        </h2>
+        </h1>
         <Image
           src="/images/flow-chart-placeholder.svg"
           alt="flow chart"
@@ -65,7 +65,7 @@ export function HowItWorksSection() {
       </section>
 
       {/* LoRa Wifi Receiver Section */}
-      <section className="bg-teal text-navy py-16 px-4 md:px-14 lg:px-16 xl:px-20">
+      <section className="bg-[linear-gradient(-180deg,#7bf8ff,#ffffff,#7bf8ff)] text-navy py-16 px-4 md:px-14 lg:px-16 xl:px-20">
         <div className="max-w-6xl mx-auto mb-12">
           <div className="flex flex-col md:flex-row-reverse items-center gap-8">
             <Image

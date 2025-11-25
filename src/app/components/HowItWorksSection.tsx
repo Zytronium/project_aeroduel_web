@@ -4,7 +4,7 @@ export function HowItWorksSection() {
   return (
     <div className="w-full">
       {/* Title and Image Section */}
-      <section className="bg-darkernavy text-skyblue py-16 px-4 md:px-14 lg:px-16 xl:px-20">
+      <section className="bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)] text-skyblue py-16 px-4 md:px-14 lg:px-16 xl:px-20">
         <div className="flex flex-col items-center justify-center gap-8 max-w-7xl mx-auto mb-12">
           <div className="relative flex justify-center w-full">
             <Image
@@ -91,7 +91,10 @@ export function HowItWorksSection() {
       </section>
 
       {/* Camera Section */}
-      <section className="bg-darkernavy text-skyblue py-16 px-4 md:px-14 lg:px-16 xl:px-20">
+      <section
+        className="text-skyblue py-16 px-4 md:px-14 lg:px-16 xl:px-20
+             bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)]"
+      >
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
             <Image

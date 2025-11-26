@@ -8,7 +8,7 @@ export function FeaturesSection() {
     >
       <h2 className="text-skyblue font-xirod text-shadow-lg">Core Features</h2>
 
-      <div className="flex flex-row justify-between my-4">
+      <div className="flex flex-row justify-between my-4 mb-12">
         <Image
           src="/box-logo-right.svg"
           alt="Placeholder"

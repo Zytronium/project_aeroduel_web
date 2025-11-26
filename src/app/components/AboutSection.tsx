@@ -4,7 +4,7 @@ export const AboutSection = () => {
   return (
     <section
       id="about"
-      className="bg-[linear-gradient(-180deg,#7bf8ff,#ffffff,#7bf8ff)] text-foreground"
+      className="bg-[linear-gradient(-90deg,#7bf8ff,#ffffff,#7bf8ff)] text-foreground"
     >
       <h2 className="text-navy text-shadow-lg font-xirod">What is Aeroduel?</h2>
       <p className="text-navy font-bold text-lg">
@@ -35,7 +35,7 @@ export const AboutSection = () => {
         and local laws.
       </small>
 
-      <div className="flex flex-row gap-4 my-4">
+      <div className="flex flex-row gap-4 my-4 mb-12">
         <img
           src="/placeholder_img.png"
           alt="Placeholder"

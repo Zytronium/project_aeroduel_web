@@ -118,6 +118,61 @@ export function HowItWorksSection() {
           </div>
         </div>
       </section>
+
+      {/* Back-end Server Section */}
+      <section className="bg-[linear-gradient(-180deg,#7bf8ff,#ffffff,#7bf8ff)] text-navy py-16 px-4 md:px-14 lg:px-16 xl:px-20">
+        <div className="max-w-6xl mx-auto mb-12">
+          <div className="flex flex-col md:flex-row-reverse items-center gap-8">
+            <Image
+              src="/images/laptop-circle.svg"
+              alt="Laptop with Aero Duel server"
+              width={400}
+              height={475}
+              className="max-w-[475px] w-full object-contain"
+            />
+            <div className="flex-1 text-left">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg">
+                Local Back-end Server
+              </h2>
+              <p className="text-lg leading-relaxed">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Phone App Section */}
+      <section
+        className="text-skyblue py-16 px-4 md:px-14 lg:px-16 xl:px-20
+             bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)]"
+      >
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
+            <Image
+              src="/images/phone-app-circle.svg"
+              alt="Aero Duel Phone App"
+              width={400}
+              height={400}
+              className="max-w-[375px] w-full object-contain"
+            />
+            <div className="flex-1 text-right">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod">
+                Aero Duel Phone App
+              </h2>
+              <p className="text-lg leading-relaxed">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

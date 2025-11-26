@@ -35,16 +35,20 @@ export const AboutSection = () => {
         and local laws.
       </small>
 
-      <div className="flex flex-row gap-4 my-4 mb-12">
+      <div className="flex flex-col md:flex-row items-center gap-8 mb-12 mt-12 justify-center">
         <img
           src="/placeholder_img.png"
           alt="Placeholder"
-          className="w-1/2 object-contain"
+          width={400}
+          height={400}
+          className="max-w-[475px] w-full object-contain"
         />
         <img
           src="/placeholder_img.png"
           alt="Placeholder"
-          className="w-1/2 object-contain"
+          width={400}
+          height={400}
+          className="max-w-[475px] w-full object-contain"
         />
       </div>
     </section>

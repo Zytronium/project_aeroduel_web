@@ -8,18 +8,20 @@ export function FeaturesSection() {
     >
       <h2 className="text-skyblue font-xirod text-shadow-lg">Core Features</h2>
 
-      <div className="flex flex-row justify-between my-4 mb-12">
+      <div className="flex flex-col md:flex-row items-center gap-8 mb-12 justify-center">
         <Image
           src="/box-logo-right.svg"
           alt="Placeholder"
-          height={208}
-          width={161}
-          className="w-1/4 object-contain"
+          width={400}
+          height={400}
+          className="max-w-[475px] w-full object-contain"
         />
         <img
           src="/placeholder_img.png"
           alt="Placeholder"
-          className="w-2/3 object-contain scale-95"
+          width={400}
+          height={400}
+          className="max-w-[475px] w-full object-contain"
         />
       </div>
     </section>

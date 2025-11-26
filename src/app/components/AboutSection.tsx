@@ -9,11 +9,12 @@ export const AboutSection = () => {
       <h2 className="text-navy text-shadow-lg font-xirod">
         What is Aero Duel?
       </h2>
-      <div className="relative w-full my-8">
+
+      <div className="relative w-full">
         <img
           src="/images/crosshair.svg"
           alt="Crosshair"
-          className="absolute top-20 left-1/2 transform -translate-x-1/2 -translate-y-1/4 w-[600px] md:w-[500px] sm:w-[200px] object-contain opacity-20 pointer-events-none"
+          className="absolute top-10 left-1/2 transform -translate-x-1/2 -translate-y-1/4 w-[800px] md:w-[650px] sm:w-[200px] object-contain opacity-20 pointer-events-none"
         />
 
         <div className="relative z-10 max-w-3xl mx-auto flex flex-col items-center justify-center h-full px-4">

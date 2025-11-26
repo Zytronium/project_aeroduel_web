@@ -48,7 +48,7 @@ export function HowItWorksSection() {
               alt="Arduino Board"
               width={400}
               height={400}
-              className="max-w-[475px] w-full object-contain"
+              className="max-w-[500px] w-full object-contain"
             />
             <div className="flex-1 text-right">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod">
@@ -107,7 +107,7 @@ export function HowItWorksSection() {
             />
             <div className="flex-1 text-right">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod">
-                CAMERA
+                H7 Cam Plus
               </h2>
               <p className="text-lg leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do

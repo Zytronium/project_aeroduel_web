@@ -26,6 +26,7 @@ export function HowItWorksSection() {
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 font-xirod text-shadow-lg">
           FLOW CHART
         </h1>
+        <h4>I will fix this chart later.</h4>
         <Image
           src="/images/flow-chart-placeholder.svg"
           alt="flow chart"

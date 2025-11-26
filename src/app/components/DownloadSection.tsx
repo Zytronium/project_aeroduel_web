@@ -2,7 +2,7 @@ export function DownloadSection() {
   return (
     <section
       id="download"
-      className="mx-4 bg-[linear-gradient(180deg,#000000,#110f44,#110f44,#000000)]"
+      className="bg-[linear-gradient(180deg,#000000,#110f44,#110f44,#000000)]"
     >
       <div className="z-1">
         <h2>Download</h2>

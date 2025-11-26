@@ -30,7 +30,6 @@ export default function Home() {
       <div className="z-1">
         <AboutSection />
         <FeaturesSection />
-        <HowItWorksSection />
         <TechStackSection />
         <Roadmap />
         <FollowSection />

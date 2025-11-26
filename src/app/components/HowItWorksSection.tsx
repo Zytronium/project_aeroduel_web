@@ -23,7 +23,7 @@ export function HowItWorksSection() {
 
       {/* Flow Chart Section */}
       <section className="bg-[linear-gradient(-180deg,#7bf8ff,#ffffff,#7bf8ff)] text-navy py-16 px-4 md:px-14 lg:px-16 xl:px-20">
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 font-xirod">
+        <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 font-xirod text-shadow-lg">
           FLOW CHART
         </h1>
         <Image
@@ -76,7 +76,7 @@ export function HowItWorksSection() {
               className="max-w-[400px] w-full object-contain"
             />
             <div className="flex-1 text-left">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg">
                 LoRa Wifi Receiver
               </h2>
               <p className="text-lg leading-relaxed">

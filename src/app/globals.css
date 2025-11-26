@@ -1,149 +1,161 @@
 @import "tailwindcss";
 
 @theme {
-    --background-primary: #021c39;
-    --background-secondary: #14a3bd;
-    --foreground-primary: #99cfff;
-    --foreground-secondary: #001a40;
-    --accent-primary: #b60c0c;
-    --accent-secondary: #d5533c;
-    --accent-tertiary: #cba655;
+  --background-primary: #021c39;
+  --background-secondary: #14a3bd;
+  --foreground-primary: #99cfff;
+  --foreground-secondary: #001a40;
+  --accent-primary: #b60c0c;
+  --accent-secondary: #d5533c;
+  --accent-tertiary: #cba655;
 }
 
 :root {
-    --background: var(--background-secondary);
-    --foreground: var(--foreground-secondary);
-    --accent: var(--accent-secondary);
-    --background-2: var(--background-primary);
-    --foreground-2: var(--foreground-primary);
-    --accent-2: var(--accent-primary);
+  --background: var(--background-secondary);
+  --foreground: var(--foreground-secondary);
+  --accent: var(--accent-secondary);
+  --background-2: var(--background-primary);
+  --foreground-2: var(--foreground-primary);
+  --accent-2: var(--accent-primary);
 
-    --scrollbar-bg: #001225;
-    --scrollbar-thumb: var(--accent-tertiary);
-    --scrollbar-thumb-hover: #f0c465;
+  --scrollbar-bg: #001225;
+  --scrollbar-thumb: var(--accent-tertiary);
+  --scrollbar-thumb-hover: #f0c465;
 }
 
 @theme inline {
-    --color-background: var(--background);
-    --color-foreground: var(--foreground);
-    --color-accent: var(--accent);
-    --color-background-2: var(--background-2);
-    --color-foreground-2: var(--foreground-2);
-    --color-accent-2: var(--accent-2);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-background-2: var(--background-2);
+  --color-foreground-2: var(--foreground-2);
+  --color-accent-2: var(--accent-2);
 
-    --color-navy: var(--foreground-secondary);
-    --color-darkernavy: var(--scrollbar-bg);
-    --color-teal: var(--background-secondary);
-    --color-skyblue: var(--foreground-primary);
-    --color-maroon: var(--accent-primary);
-    --color-redorange: var(--accent-secondary);
-    --color-gold: var(--accent-tertiary);
+  --color-navy: var(--foreground-secondary);
+  --color-darkernavy: var(--scrollbar-bg);
+  --color-teal: var(--background-secondary);
+  --color-skyblue: var(--foreground-primary);
+  --color-maroon: var(--accent-primary);
+  --color-redorange: var(--accent-secondary);
+  --color-gold: var(--accent-tertiary);
 
-    --font-sans: 'GltpStarion', sans-serif;
+  --font-sans: "GltpStarion", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        --background: var(--background-primary);
-        --foreground: var(--foreground-primary);
-        --accent: var(--accent-primary);
-        --background-2: var(--background-secondary);
-        --foreground-2: var(--foreground-secondary);
-        --accent-2: var(--accent-secondary);
-    }
+  :root {
+    --background: var(--background-primary);
+    --foreground: var(--foreground-primary);
+    --accent: var(--accent-primary);
+    --background-2: var(--background-secondary);
+    --foreground-2: var(--foreground-secondary);
+    --accent-2: var(--accent-secondary);
+  }
 }
 
 body {
-    background: var(--background);
-    color: var(--foreground);
-    font-family: var(--font-sans), Inter, Arial, Helvetica, sans-serif;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Inter, Arial, Helvetica, sans-serif;
 }
 
 * {
-    font-family: var(--font-sans), Inter, Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Inter, Arial, Helvetica, sans-serif;
 }
 
 h1 {
-    @apply text-6xl font-bold my-4;
+  @apply text-6xl font-bold my-4;
 }
 
 h2 {
-    @apply text-4xl font-semibold my-3;
+  @apply text-4xl font-semibold my-3;
 }
 
 h3 {
-    @apply text-2xl font-medium my-2;
+  @apply text-2xl font-medium my-2;
 }
 
 h4 {
-    @apply text-xl my-1;
+  @apply text-xl my-1;
 }
 
 h5 {
-    @apply text-lg my-[0.5];
+  @apply text-lg my-[0.5];
 }
 
 h6 {
-    @apply text-sm mb-[0.25];
+  @apply text-sm mb-[0.25];
 }
 
 section {
-    @apply px-4 md:px-14 lg:px-16 xl:px-20 py-2 flex flex-col items-center border-b-2 border-maroon pt-15;
+  @apply px-4 md:px-14 lg:px-16 xl:px-20 py-2 flex flex-col items-center border-b-4 border-maroon pt-15;
 }
 
 section h2 {
-    @apply text-center mb-8;
+  @apply text-center mb-8;
 }
 
-section p, section small, section strong, section a {
-    @apply text-start md:w-[90%] lg:w-[80%] xl:w-[66%];
+section p,
+section small,
+section strong,
+section a {
+  @apply text-start md:w-[90%] lg:w-[80%] xl:w-[66%];
 }
 
 section p {
-    @apply mb-4;
+  @apply mb-4;
 }
 
 @font-face {
-    font-family: 'GltpStarion';
-    src: url('/fonts/GltpStarionRegular.otf');
+  font-family: "GltpStarion";
+  src: url("/fonts/GltpStarionRegular.otf");
 }
 
 @font-face {
-    font-family: 'Architype';
-    src: url('/fonts/ArchitypeAubette.ttf');
+  font-family: "Architype";
+  src: url("/fonts/ArchitypeAubette.ttf");
+}
+
+@font-face {
+  font-family: "Xirod";
+  src: url("/fonts/Xirod.otf");
 }
 
 .title {
-    @apply text-7xl font-thin text-center mb-1;
+  @apply text-7xl font-thin text-center mb-1;
 }
 
 .subtitle {
-    @apply text-center mb-4;
+  @apply text-center mb-4;
+}
+
+.font-xirod {
+  font-family: "Xirod", sans-serif;
 }
 
 .btn {
-    @apply px-4 py-2 m-2 w-fit rounded-lg bg-accent text-skyblue hover:bg-accent-2 transition-colors duration-250 cursor-pointer;
+  @apply px-4 py-2 m-2 w-fit rounded-lg bg-accent text-skyblue hover:bg-accent-2 transition-colors duration-250 cursor-pointer;
 }
 
 .btn:disabled {
-    @apply opacity-50 cursor-not-allowed bg-accent hover:bg-accent;
+  @apply opacity-50 cursor-not-allowed bg-accent hover:bg-accent;
 }
 
 /* Scrollbar colors for Chrome, Edge, and Safari */
 ::-webkit-scrollbar {
-    width: 12px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--scrollbar-bg);
+  background: var(--scrollbar-bg);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--scrollbar-thumb);
-    border-radius: 20px;
-    border: 3px solid var(--scrollbar-bg);
+  background-color: var(--scrollbar-thumb);
+  border-radius: 20px;
+  border: 3px solid var(--scrollbar-bg);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--scrollbar-thumb-hover);
+  background-color: var(--scrollbar-thumb-hover);
 }

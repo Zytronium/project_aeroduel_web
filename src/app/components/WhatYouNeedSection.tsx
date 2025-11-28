@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export function HowItWorksSection() {
+export function WhatYouNeedSection() {
   return (
     <div className="w-full">
       {/* Title and Image Section */}
@@ -16,7 +16,7 @@ export function HowItWorksSection() {
             />
           </div>
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-center font-xirod">
-            HOW <span className="text-red-700 font-xirod">IT</span> WORKS
+            HOW IT WORKS
           </h1>
         </div>
       </section>
@@ -25,9 +25,7 @@ export function HowItWorksSection() {
       <section className="bg-[radial-gradient(circle,#7bf8ff,#ffffff,#7bf8ff)] text-navy py-16 px-4 md:px-14 lg:px-16 xl:px-20">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 font-xirod text-shadow-lg">
-            Along with <span className="text-red-700 font-xirod">your</span>{" "}
-            plane of choice <span className="text-red-700 font-xirod">you</span>{" "}
-            will need
+            Along with your plane of choice you will need
           </h1>
         </div>
         <h4 className="font-bold">I will fix this later</h4>
@@ -42,9 +40,9 @@ export function HowItWorksSection() {
           Explore the complete parts list and get all source code{" "}
           <a
             href="/downloads"
-            className="inline text-red-700 hover:text-orange-900 text-xl font-bold transition-colors duration-300"
+            className="text-orange-700 hover:text-orange-900 text-xl font-bold transition-colors duration-300"
           >
-            <span className="text-2xl md:text-3xl">here</span>
+            here
           </a>
           .
         </h4>
@@ -53,7 +51,7 @@ export function HowItWorksSection() {
       {/* Arduino Section */}
       <section
         className="text-skyblue py-16 px-4 md:px-14 lg:px-16 xl:px-20
-             bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)]"
+			 bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)]"
       >
         <div className="max-w-6xl mx-auto mb-12">
           <div className="flex flex-col md:flex-row items-center gap-8">
@@ -68,9 +66,7 @@ export function HowItWorksSection() {
               <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod">
                 ESP32 board
                 <span className="block text-xl md:text-2xl font-normal">
-                  <span className="text-red-700 font-xirod">
-                    (primary controller)
-                  </span>
+                  (primary controller)
                 </span>
               </h2>
               <p className="text-lg leading-relaxed">
@@ -97,12 +93,10 @@ export function HowItWorksSection() {
               className="max-w-[400px] w-full object-contain"
             />
             <div className="flex-1 text-left">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6  font-xirod">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod">
                 LoRa module
                 <span className="block text-xl md:text-2xl font-normal">
-                  <span className="text-red-700 font-xirod">
-                    (long-range low-power transmission)
-                  </span>
+                  (long-range low-power transmission)
                 </span>
               </h2>
               <p className="text-lg leading-relaxed font-bold">
@@ -120,7 +114,7 @@ export function HowItWorksSection() {
       {/* Camera Section */}
       <section
         className="text-skyblue py-16 px-4 md:px-14 lg:px-16 xl:px-20
-             bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)]"
+			 bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)]"
       >
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
@@ -135,9 +129,7 @@ export function HowItWorksSection() {
               <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod">
                 H7 Cam Plus
                 <span className="block text-xl md:text-2xl font-normal">
-                  <span className="text-red-700 font-xirod">
-                    (computer vision sensor)
-                  </span>
+                  (computer vision sensor)
                 </span>
               </h2>
               <p className="text-lg leading-relaxed">
@@ -167,9 +159,7 @@ export function HowItWorksSection() {
               <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod">
                 Aero Duel Server
                 <span className="block text-xl md:text-2xl font-normal">
-                  <span className="text-red-700 font-xirod">
-                    (central communication hub)
-                  </span>
+                  (central communication hub)
                 </span>
               </h2>
               <p className="text-lg leading-relaxed font-bold">
@@ -187,7 +177,7 @@ export function HowItWorksSection() {
       {/* Phone App Section */}
       <section
         className="text-skyblue py-16 px-4 md:px-14 lg:px-16 xl:px-20
-             bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)]"
+			 bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)]"
       >
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
@@ -202,7 +192,7 @@ export function HowItWorksSection() {
               <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod">
                 Aero Duel Phone App
                 <span className="block text-xl md:text-2xl font-normal">
-                  <span className="text-red-700 font-xirod">(live match interface)</span>
+                  (live match interface)
                 </span>
               </h2>
               <p className="text-lg leading-relaxed">

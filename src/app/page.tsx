@@ -2,7 +2,6 @@ import { HeroSection } from "@/app/components/HeroSection";
 import { AboutSection } from "@/app/components/AboutSection";
 import { DownloadSection } from "@/app/components/DownloadSection";
 import { FeaturesSection } from "@/app/components/FeaturesSection";
-import { HowItWorksSection } from "@/app/components/HowItWorksSection";
 import Image from "next/image";
 function TechStackSection() {
   return null;

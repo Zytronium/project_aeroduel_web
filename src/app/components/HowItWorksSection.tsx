@@ -16,17 +16,21 @@ export function HowItWorksSection() {
             />
           </div>
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-center font-xirod">
-            HOW IT WORKS
+            HOW <span className="text-red-700 font-xirod">IT</span> WORKS
           </h1>
         </div>
       </section>
 
       {/* Flow Chart Section */}
-      <section className="bg-[linear-gradient(-180deg,#7bf8ff,#ffffff,#7bf8ff)] text-navy py-16 px-4 md:px-14 lg:px-16 xl:px-20">
-        <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 font-xirod text-shadow-lg">
-          FLOW CHART
-        </h1>
-        <h4>I will fix this chart later.</h4>
+      <section className="bg-[radial-gradient(circle,#7bf8ff,#ffffff,#7bf8ff)] text-navy py-16 px-4 md:px-14 lg:px-16 xl:px-20">
+        <div className="max-w-3xl mx-auto">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 font-xirod text-shadow-lg">
+            Along with <span className="text-red-700 font-xirod">your</span>{" "}
+            plane of choice <span className="text-red-700 font-xirod">you</span>{" "}
+            will need
+          </h1>
+        </div>
+        <h4 className="font-bold">I will fix this later</h4>
         <Image
           src="/images/flow-chart-placeholder.svg"
           alt="flow chart"
@@ -34,6 +38,16 @@ export function HowItWorksSection() {
           height={800}
           className="max-w-[800px] w-full object-contain mb-12"
         />
+        <h4 className="font-bold text-center md:text-left md:max-w-[90%] lg:max-w-[80%] xl:max-w-[66%]">
+          Explore the complete parts list and get all source code{" "}
+          <a
+            href="/downloads"
+            className="inline text-red-700 hover:text-orange-900 text-xl font-bold transition-colors duration-300"
+          >
+            <span className="text-2xl md:text-3xl">here</span>
+          </a>
+          .
+        </h4>
       </section>
 
       {/* Arduino Section */}
@@ -48,17 +62,23 @@ export function HowItWorksSection() {
               alt="Arduino Board"
               width={400}
               height={400}
-              className="max-w-[475px] w-full object-contain"
+              className="max-w-[500px] w-full object-contain"
             />
             <div className="flex-1 text-right">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod">
-                ARDUINO BOARD
+                ESP32 board
+                <span className="block text-xl md:text-2xl font-normal">
+                  <span className="text-red-700 font-xirod">
+                    (primary controller)
+                  </span>
+                </span>
               </h2>
               <p className="text-lg leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                The ESP32 board serves as the brain of each aircraft. It
+                processes input from the H7 Cam Plus camera to detect hits,
+                manages plane health and hit confirmations, and communicates
+                wirelessly with the base station via the LoRa module. This
+                ensures accurate tracking and synchronization during matches.
               </p>
             </div>
           </div>
@@ -77,14 +97,20 @@ export function HowItWorksSection() {
               className="max-w-[400px] w-full object-contain"
             />
             <div className="flex-1 text-left">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg">
-                LoRa Wifi Receiver
+              <h2 className="text-4xl md:text-5xl font-bold mb-6  font-xirod">
+                LoRa module
+                <span className="block text-xl md:text-2xl font-normal">
+                  <span className="text-red-700 font-xirod">
+                    (long-range low-power transmission)
+                  </span>
+                </span>
               </h2>
-              <p className="text-lg leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+              <p className="text-lg leading-relaxed font-bold">
+                The LoRa module provides reliable, long-range wireless
+                communication between each plane and the base station. It
+                transmits hit data, plane ID information, and game state
+                updates, allowing multiple planes to compete in real time
+                without interference.
               </p>
             </div>
           </div>
@@ -107,13 +133,19 @@ export function HowItWorksSection() {
             />
             <div className="flex-1 text-right">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod">
-                CAMERA
+                H7 Cam Plus
+                <span className="block text-xl md:text-2xl font-normal">
+                  <span className="text-red-700 font-xirod">
+                    (computer vision sensor)
+                  </span>
+                </span>
               </h2>
               <p className="text-lg leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                The H7 Cam Plus camera detects colored LEDs on opposing planes
+                using onboard computer vision algorithms. When a plane is
+                targeted for a sufficient amount of time, the camera signals the
+                ESP32 to register a hit, enabling precise, sunlight-resistant
+                detection.
               </p>
             </div>
           </div>
@@ -132,14 +164,20 @@ export function HowItWorksSection() {
               className="max-w-[475px] w-full object-contain"
             />
             <div className="flex-1 text-left">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg">
-                Local Back-end Server
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod">
+                Aero Duel Server
+                <span className="block text-xl md:text-2xl font-normal">
+                  <span className="text-red-700 font-xirod">
+                    (central communication hub)
+                  </span>
+                </span>
               </h2>
-              <p className="text-lg leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+              <p className="text-lg leading-relaxed font-bold">
+                The local back-end server collects hit data from all planes via
+                the LoRa to ESP32 communication. It manages game logic, plane
+                health, and scoring, then pushes real-time updates to connected
+                clients using WebSockets, ensuring the scoreboard reflects
+                current match status instantly.
               </p>
             </div>
           </div>
@@ -163,12 +201,15 @@ export function HowItWorksSection() {
             <div className="flex-1 text-right">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod">
                 Aero Duel Phone App
+                <span className="block text-xl md:text-2xl font-normal">
+                  <span className="text-red-700 font-xirod">(live match interface)</span>
+                </span>
               </h2>
               <p className="text-lg leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                The Aero Duel phone app displays the live scoreboard, player
+                stats, and match progress. It connects to the back-end server
+                over WebSockets, allowing players and spectators to track hits,
+                health, and game outcomes in real time on a mobile device.
               </p>
             </div>
           </div>

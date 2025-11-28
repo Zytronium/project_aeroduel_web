@@ -36,18 +36,18 @@ function Header() {
             <Link href="/" className="hover:text-teal transition">
               Home
             </Link>
-            <a href="#about" className="hover:text-teal transition">
+            <a href="/#about" className="hover:text-teal transition">
               About
             </a>
-            <a href="#features" className="hover:text-teal transition">
+            <a href="/#features" className="hover:text-teal transition">
               Features
             </a>
             <Link href="/how-it-works" className="hover:text-teal transition">
               How It Works
             </Link>
-            <a href="#tech-stack" className="hover:text-teal transition">
-              Tech Stack
-            </a>
+            <Link href="/what-you-need" className="hover:text-teal transition">
+              What You Need
+            </Link>
             <a href="#roadmap" className="hover:text-teal transition">
               Roadmap
             </a>

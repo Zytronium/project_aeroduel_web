@@ -36,10 +36,10 @@ function Header() {
             <Link href="/" className="hover:text-teal transition">
               Home
             </Link>
-            <a href="#about" className="hover:text-teal transition">
+            <a href="/#about" className="hover:text-teal transition">
               About
             </a>
-            <a href="#features" className="hover:text-teal transition">
+            <a href="/#features" className="hover:text-teal transition">
               Features
             </a>
             <Link href="/how-it-works" className="hover:text-teal transition">

@@ -22,7 +22,7 @@ export function HowItWorksSection() {
       </section>
 
       {/* Flow Chart Section */}
-      <section className="bg-[linear-gradient(-180deg,#7bf8ff,#ffffff,#7bf8ff)] text-navy py-16 px-4 md:px-14 lg:px-16 xl:px-20">
+      <section className="bg-[radial-gradient(circle,#7bf8ff,#ffffff,#7bf8ff)] text-navy py-16 px-4 md:px-14 lg:px-16 xl:px-20">
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 font-xirod text-shadow-lg">
           FLOW CHART
         </h1>

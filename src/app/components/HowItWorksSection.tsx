@@ -52,7 +52,10 @@ export function HowItWorksSection() {
             />
             <div className="flex-1 text-right">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod">
-                ARDUINO BOARD
+                ESP32 board
+                <span className="block text-xl md:text-2xl font-normal">
+                  (primary controller)
+                </span>
               </h2>
               <p className="text-lg leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do

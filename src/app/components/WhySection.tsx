@@ -20,12 +20,12 @@ export function WhySection() {
             <h1 className="text-4xl text-gray-300 md:text-5xl font-bold font-xirod text-shadow-lg text-shadow-black">
               Who is{" "}
               <span className="">
-                <h1 className="inline-block text-sky-400 font-vipessrg tracking-wider text-shadow-lg text-shadow-black scale-110 md:scale-[1.15] lg:scale-[1.2] origin-center ml-4">
+                <h1 className="inline-block font-vipessrg tracking-wider scale-110 md:scale-[1.15] lg:scale-[1.2] origin-center text-sky-400 drop-shadow-[0_0_8px_rgba(56,189,248,0.6)] text-shadow-lg">
                   Aero
                 </h1>
               </span>{" "}
               <span className="text-red-700 text-4xl md:text-5xl font-vipessrg tracking-wider">
-                <h1 className="inline-block text-red-700 font-vipessrg tracking-wider text-shadow-lg text-shadow-black scale-110 md:scale-[1.15] lg:scale-[1.2] origin-center ml-4 md:ml-6 lg:ml-8 mr-4">
+                <h1 className="inline-block font-vipessrg tracking-wider scale-110 md:scale-[1.15] lg:scale-[1.2] origin-center text-red-500 drop-shadow-[0_0_8px_rgba(239,68,68,0.6)] text-shadow-lg ml-3 md:ml-5 lg:ml-6">
                   Duel
                 </h1>
               </span>{" "}

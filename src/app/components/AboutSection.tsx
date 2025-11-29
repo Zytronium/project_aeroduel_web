@@ -11,10 +11,10 @@ export const AboutSection = () => {
           <div className="flex-1 space-y-6 text-center w-full max-w-4xl mx-auto">
             <h1 className="text-gray-300 text-shadow-lg text-shadow-black font-xirod text-4xl md:text-5xl mb-8 tracking-wider">
               What is{" "}
-              <span className="inline-block text-sky-400 font-vipessrg tracking-wider text-shadow-lg text-shadow-black scale-105 md:scale-[1.15] lg:scale-[1.2] origin-center pl-2">
+              <span className="inline-block font-vipessrg tracking-wider scale-110 md:scale-[1.15] lg:scale-[1.2] origin-center text-sky-400 drop-shadow-[0_0_8px_rgba(56,189,248,0.6)] text-shadow-lg">
                 Aero
               </span>{" "}
-              <span className="inline-block text-red-700 font-vipessrg tracking-wider text-shadow-lg text-shadow-black scale-105 md:scale-[1.15] lg:scale-[1.2] origin-center ml-2 md:ml-6 lg:ml-8 mr-4">
+              <span className="inline-block font-vipessrg tracking-wider scale-110 md:scale-[1.15] lg:scale-[1.2] origin-center text-red-500 drop-shadow-[0_0_8px_rgba(239,68,68,0.6)] text-shadow-lg ml-3 md:ml-5 lg:ml-6">
                 Duel
               </span>
               ?
@@ -42,7 +42,7 @@ export const AboutSection = () => {
               runs the desktop app while all pilots use the mobile app.
             </p>
 
-            <small className="text-red-700 font-bold block mt-4 !text-center !w-full max-w-none text-shadow-lg text-shadow-black">
+            <small className="text-red-700 font-bold block mt-4 !text-center !w-full max-w-none text-shadow-lg text-shadow-black skew-x-[-10deg]">
               * Pilots must be experienced and follow all AMA safety guidelines
               and local laws.
             </small>

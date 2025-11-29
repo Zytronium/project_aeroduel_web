@@ -79,11 +79,11 @@ export function HowItWorksSection() {
             height={800}
             className="max-w-[800px] w-full object-contain mb-12"
           />
-          <h4 className="font-bold text-center max-w-[90%] lg:max-w-[80%] xl:max-w-[66%] text-shadow-lg text-shadow-white">
+          <h4 className="font-bold text-navy text-center max-w-[90%] lg:max-w-[80%] xl:max-w-[66%] text-shadow-lg text-shadow-white">
             Explore the complete parts list and get all source code{" "}
             <a
               href="/downloads"
-              className="inline text-navy hover:text-red-700 text-xl font-bold transition-colors duration-300"
+              className="inline text-navy hover:text-red-700 text-2xl font-bold transition-colors duration-300"
             >
               <span className="text-2xl md:text-3xl text-shadow-lg text-shadow-white">
                 here

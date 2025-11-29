@@ -16,19 +16,23 @@ export function WhySection() {
             height={400}
             className="max-w-[500px] w-full object-contain"
           />
-          <div className="flex-1 text-right">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black">
+          <div className="flex-1 text-center">
+            <h1 className="text-4xl md:text-5xl font-bold font-xirod text-shadow-lg text-shadow-black">
               Who is{" "}
-              <span className="text-sky-700 text-4xl md:text-5xl font-vipessrg tracking-wider">
-                Aero
+              <span className="text-sky-700">
+                <h1 className="inline-block text-sky-700 font-vipessrg tracking-wider text-shadow-lg text-shadow-black scale-110 md:scale-[1.15] lg:scale-[1.2] origin-center ml-4">
+                  Aero
+                </h1>
               </span>{" "}
               <span className="text-red-700 text-4xl md:text-5xl font-vipessrg tracking-wider">
-                Duel
+                <h1 className="inline-block text-red-700 font-vipessrg tracking-wider text-shadow-lg text-shadow-black scale-110 md:scale-[1.15] lg:scale-[1.2] origin-center ml-4 md:ml-6 lg:ml-8 mr-4">
+                  Duel
+                </h1>
               </span>{" "}
               For?
               <span className="block text-xl md:text-2xl font-normal"></span>
-            </h2>
-            <p className="text-lg leading-relaxed text-shadow-lg text-shadow-black">
+            </h1>
+            <p className="text-lg text-left leading-relaxed text-shadow-lg text-shadow-black pb-4">
               Hobbyists who enjoy RC aircraft and want interactive game-like
               experiences. Makers, engineers, and students interested in
               combining robotics, IoT, and computer vision. Clubs or groups who

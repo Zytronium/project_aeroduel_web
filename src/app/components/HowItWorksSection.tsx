@@ -107,15 +107,15 @@ export function HowItWorksSection() {
               className="max-w-[500px] w-full object-contain"
             />
             <div className="flex-1 text-right">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirodtext-shadow-lg text-shadow-black">
                 ESP32 board
                 <span className="block text-xl md:text-2xl font-normal">
-                  <span className="text-red-700 font-xirod">
+                  <span className="text-red-700 font-xirod text-shadow-lg text-shadow-black">
                     (primary controller)
                   </span>
                 </span>
               </h2>
-              <p className="text-lg leading-relaxed">
+              <p className="text-lg leading-relaxed font-bold text-shadow-lg text-shadow-black">
                 The ESP32 board serves as the brain of each aircraft. It
                 processes input from the H7 Cam Plus camera to detect hits,
                 manages plane health and hit confirmations, and communicates
@@ -139,7 +139,7 @@ export function HowItWorksSection() {
               className="max-w-[400px] w-full object-contain"
             />
             <div className="flex-1 text-left">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6  font-xirod">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-shadow-lg text-shadow-white font-xirod">
                 LoRa module
                 <span className="block text-xl md:text-2xl font-normal">
                   <span className="text-red-700 font-xirod">
@@ -147,7 +147,7 @@ export function HowItWorksSection() {
                   </span>
                 </span>
               </h2>
-              <p className="text-lg leading-relaxed font-bold">
+              <p className="text-lg leading-relaxed font-bold text-shadow-lg text-shadow-white">
                 The LoRa module provides reliable, long-range wireless
                 communication between each plane and the base station. It
                 transmits hit data, plane ID information, and game state
@@ -174,7 +174,7 @@ export function HowItWorksSection() {
               className="max-w-[400px] w-full object-contain"
             />
             <div className="flex-1 text-right">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black">
                 H7 Cam Plus
                 <span className="block text-xl md:text-2xl font-normal">
                   <span className="text-red-700 font-xirod">
@@ -182,7 +182,7 @@ export function HowItWorksSection() {
                   </span>
                 </span>
               </h2>
-              <p className="text-lg leading-relaxed">
+              <p className="text-lg leading-relaxed font-bold text-shadow-lg text-shadow-black">
                 The H7 Cam Plus camera detects colored LEDs on opposing planes
                 using onboard computer vision algorithms. When a plane is
                 targeted for a sufficient amount of time, the camera signals the
@@ -206,7 +206,7 @@ export function HowItWorksSection() {
               className="max-w-[475px] w-full object-contain"
             />
             <div className="flex-1 text-left">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-white">
                 Aero Duel Server
                 <span className="block text-xl md:text-2xl font-normal">
                   <span className="text-red-700 font-xirod">
@@ -214,7 +214,7 @@ export function HowItWorksSection() {
                   </span>
                 </span>
               </h2>
-              <p className="text-lg leading-relaxed font-bold">
+              <p className="text-lg leading-relaxed font-bold text-shadow-lg text-shadow-white">
                 The local back-end server collects hit data from all planes via
                 the LoRa to ESP32 communication. It manages game logic, plane
                 health, and scoring, then pushes real-time updates to connected
@@ -241,7 +241,7 @@ export function HowItWorksSection() {
               className="max-w-[375px] w-full object-contain"
             />
             <div className="flex-1 text-right">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black">
                 Aero Duel Phone App
                 <span className="block text-xl md:text-2xl font-normal">
                   <span className="text-red-700 font-xirod">
@@ -249,7 +249,7 @@ export function HowItWorksSection() {
                   </span>
                 </span>
               </h2>
-              <p className="text-lg leading-relaxed">
+              <p className="text-lg leading-relaxed font-bold text-shadow-lg text-shadow-black">
                 The Aero Duel phone app displays the live scoreboard, player
                 stats, and match progress. It connects to the back-end server
                 over WebSockets, allowing players and spectators to track hits,

@@ -20,7 +20,7 @@ export function DuelingSection() {
               Dueling
               <span className="block text-xl md:text-2xl font-normal"></span>
             </h1>
-            <p className="text-lg leading-relaxed text-shadow-lg text-shadow-black">
+            <p className="text-lg leading-relaxed text-shadow-lg text-shadow-black pb-4">
               Each plane uses an onboard H7 Cam Plus to visually detect colored
               LEDs on the opposing plane. When the camera “locks on” to the
               target color long enough, it registers a hit and sends that data

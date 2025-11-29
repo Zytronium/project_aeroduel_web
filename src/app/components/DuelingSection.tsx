@@ -16,7 +16,7 @@ export function DuelingSection() {
             className="max-w-[500px] w-full object-contain"
           />
           <div className="flex-1 text-right">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black text-center">
               Dueling
               <span className="block text-xl md:text-2xl font-normal"></span>
             </h1>
@@ -27,17 +27,16 @@ export function DuelingSection() {
               in real time to a React-based scoreboard, allowing players to
               track wins, losses, and health.
             </p>
-            <p className="font-bold text-center md:text-left md:max-w-[90%] lg:max-w-[80%] xl:max-w-[66%] text-shadow-lg text-shadow-black">
-              Learn more about how it works{" "}
+            <p className="font-bold text-center md:text-right md:max-w-[90%] lg:max-w-[80%] xl:max-w-[66%] text-shadow-lg text-shadow-black">
               <a
                 href="/how-it-works"
                 className="inline text-white hover:text-red-700 text-xl font-bold transition-colors duration-300"
               >
-                <span className="text-2xl md:text-3xl text-shadow-lg text-shadow-black">
-                  here
+                <span className="text-2xl md:text-3xl text-shadow-lg pr-2 text-shadow-black">
+                  Learn
                 </span>
-              </a>
-              .
+              </a>{" "}
+              more about how it works .
             </p>
           </div>
         </div>

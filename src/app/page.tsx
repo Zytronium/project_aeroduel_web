@@ -37,7 +37,6 @@ export default function Home() {
         <Roadmap />
         <FollowSection />
       </div>
-      <DownloadSection />
     </>
   );
 }

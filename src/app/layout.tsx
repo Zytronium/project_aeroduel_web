@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,10 +19,6 @@ export const metadata: Metadata = {
   description:
     "Aeroduel is a cutting-edge RC aerial combat system. Real dogfights. Real FPV immersion. Real engineering.",
 };
-
-function Footer() {
-  return null;
-}
 
 export default function RootLayout({
   children,

@@ -20,7 +20,7 @@ export function WhySection() {
             <h1 className="text-4xl md:text-5xl font-bold font-xirod text-shadow-lg text-shadow-black">
               Who is{" "}
               <span className="text-sky-700">
-                <h1 className="inline-block text-sky-700 font-vipessrg tracking-wider text-shadow-lg text-shadow-black scale-110 md:scale-[1.15] lg:scale-[1.2] origin-center ml-4">
+                <h1 className="inline-block text-sky-400 font-vipessrg tracking-wider text-shadow-lg text-shadow-black scale-110 md:scale-[1.15] lg:scale-[1.2] origin-center ml-4">
                   Aero
                 </h1>
               </span>{" "}
@@ -39,12 +39,12 @@ export function WhySection() {
               want competitive RC dogfight matches. Or anyone who wants a
               modular system for plane-vs-plane scoring or drone battle games.
             </p>
-            <p className="font-bold text-center md:text-left md:max-w-[90%] lg:max-w-[80%] xl:max-w-[66%]text-shadow-lg text-shadow-black">
+            <p className="font-bold text-center md:text-right md:max-w-[90%] lg:max-w-[80%] xl:max-w-[66%]text-shadow-lg text-shadow-black">
               <a
-                href="/how-it-works"
+                href="/Contact"
                 className="inline text-white hover:text-blue-700 text-xl font-bold transition-colors duration-300"
               >
-                <span className="text-2xl md:text-3xl text-shadow-lg text-shadow-black">
+                <span className="text-2xl md:text-3xl text-shadow-lg text-shadow-black pr-2">
                   Contact{" "}
                 </span>
               </a>

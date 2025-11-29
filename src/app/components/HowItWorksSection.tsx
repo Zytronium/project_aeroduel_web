@@ -51,11 +51,11 @@ export function HowItWorksSection() {
             }}
           >
             <Image
-              src="/images/plane-right.svg"
+              src="/images/plane-white-left.svg"
               alt="jet with crosshair"
               width={400}
               height={400}
-              className="max-w-[600px] w-full object-contain"
+              className="max-w-[750px] w-full object-contain"
             />
           </div>
         </div>
@@ -64,7 +64,7 @@ export function HowItWorksSection() {
       {/* Flow Chart Section */}
       <section className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] text-navy pt-10 px-4 md:px-14 lg:px-16 xl:px-20 flex flex-col items-center">
         <div className="max-w-3xl mx-auto mb-12">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 font-xirod text-shadow-lg">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 font-xirod text-shadow-lg text-shadow-white">
             Along with <span className="text-red-700 font-xirod">your</span>{" "}
             plane of choice <span className="text-red-700 font-xirod">you</span>{" "}
             will need
@@ -79,13 +79,15 @@ export function HowItWorksSection() {
             height={800}
             className="max-w-[800px] w-full object-contain mb-12"
           />
-          <h4 className="font-bold text-center max-w-[90%] lg:max-w-[80%] xl:max-w-[66%]">
+          <h4 className="font-bold text-center max-w-[90%] lg:max-w-[80%] xl:max-w-[66%] text-shadow-lg text-shadow-white">
             Explore the complete parts list and get all source code{" "}
             <a
               href="/downloads"
-              className="inline text-red-700 hover:text-red-500 text-xl font-bold transition-colors duration-300"
+              className="inline text-navy hover:text-red-700 text-xl font-bold transition-colors duration-300"
             >
-              <span className="text-2xl md:text-3xl">here</span>
+              <span className="text-2xl md:text-3xl text-shadow-lg text-shadow-white">
+                here
+              </span>
             </a>
             .
           </h4>

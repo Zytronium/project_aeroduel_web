@@ -11,7 +11,7 @@ export const AboutSection = () => {
           <div className="flex-1 space-y-6 text-center w-full max-w-4xl mx-auto">
             <h1 className="text-white text-shadow-lg text-shadow-black font-xirod text-4xl md:text-5xl mb-8 tracking-wider">
               What is{" "}
-              <span className="inline-block text-sky-700 font-vipessrg tracking-wider text-shadow-lg text-shadow-black scale-105 md:scale-[1.15] lg:scale-[1.2] origin-center">
+              <span className="inline-block text-sky-400 font-vipessrg tracking-wider text-shadow-lg text-shadow-black scale-105 md:scale-[1.15] lg:scale-[1.2] origin-center pl-2">
                 Aero
               </span>{" "}
               <span className="inline-block text-red-700 font-vipessrg tracking-wider text-shadow-lg text-shadow-black scale-105 md:scale-[1.15] lg:scale-[1.2] origin-center ml-2 md:ml-6 lg:ml-8 mr-4">

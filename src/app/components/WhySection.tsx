@@ -35,14 +35,13 @@ export function WhySection() {
               modular system for plane-vs-plane scoring or drone battle games.
             </p>
             <p className="font-bold text-center md:text-left md:max-w-[90%] lg:max-w-[80%] xl:max-w-[66%]">
-              Learn more about how it works{" "}
               <a
                 href="/how-it-works"
-                className="inline text-white hover:text-gray-700 text-xl font-bold transition-colors duration-300"
+                className="inline text-white hover:text-blue-700 text-xl font-bold transition-colors duration-300"
               >
-                <span className="text-2xl md:text-3xl">here</span>
+                <span className="text-2xl md:text-3xl">Contact </span>
               </a>
-              .
+              us to get involved!
             </p>
           </div>
         </div>

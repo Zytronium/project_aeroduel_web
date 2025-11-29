@@ -31,7 +31,7 @@ export function DuelingSection() {
               Learn more about how it works{" "}
               <a
                 href="/how-it-works"
-                className="inline text-white hover:text-gray-700 text-xl font-bold transition-colors duration-300"
+                className="inline text-white hover:text-red-700 text-xl font-bold transition-colors duration-300"
               >
                 <span className="text-2xl md:text-3xl">here</span>
               </a>

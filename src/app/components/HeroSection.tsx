@@ -7,7 +7,7 @@ export function HeroSection() {
       id="hero"
       className="bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)] py-16 px-4 md:px-14 lg:px-16 xl:px-20 w-full"
     >
-      <div className="flex flex-col items-center justify-center w-full max-w-screen-2xl mx-auto gap-8 mb-12">
+      <div className="flex flex-col items-center justify-center w-full max-w-screen-2xl mx-auto gap-8">
         <Image
           src="/images/aero-duel-logo-stacked.svg"
           width={1500}

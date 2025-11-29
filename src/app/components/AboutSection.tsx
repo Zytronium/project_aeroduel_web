@@ -4,7 +4,7 @@ export const AboutSection = () => {
   return (
     <section
       className="text-skyblue py-16 px-4 md:px-14 lg:px-16 xl:px-20
-                 bg-[radial-gradient(circle,#ffffff,#7bf8ff,#ffffff,#7bf8ff)]"
+                 bg-[linear-gradient(180deg,#110f44,#7bf8ff,#7bf8ff,#7bf8ff,#7bf8ff,#7bf8ff,#110f44,#110f44,#110f44,#000000)] text-shadow-2xs"
     >
       <div className="max-w-6xl mx-auto mb-12">
         <div className="flex flex-col items-center gap-8">
@@ -28,13 +28,13 @@ export const AboutSection = () => {
               ?
             </h2>
 
-            <p className="text-navy font-bold text-lg !text-center !w-full max-w-none">
+            <p className="text-sky font-bold text-lg !text-center !w-full max-w-none">
               Aeroduel merges cutting-edge software engineering with RC model
               aircraft to create an advanced aerial combat system for RC
               aircraft.
             </p>
 
-            <p className="text-navy font-bold text-lg !text-center !w-full max-w-none">
+            <p className="text-sky font-bold text-lg !text-center !w-full max-w-none">
               We're equipping high-performance RC fighter jets with camera
               systems that automatically detect targets equipped with Aero Duel
               detection lights. This allows the aircraft to use advanced
@@ -43,7 +43,7 @@ export const AboutSection = () => {
               the ground.
             </p>
 
-            <p className="text-navy font-bold text-lg !text-center !w-full max-w-none">
+            <p className="text-sky font-bold text-lg !text-center !w-full max-w-none">
               Our mobile app will allow users to register their planes equipped
               with Aeroduel equipment and enter dogfights by scanning a QR code
               or entering a game pin displayed on the host computer. One player

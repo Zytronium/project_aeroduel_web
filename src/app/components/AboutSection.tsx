@@ -18,8 +18,14 @@ export const AboutSection = () => {
 
           <div className="flex-1 space-y-6 text-center w-full max-w-4xl mx-auto">
             <h2 className="text-navy text-shadow-lg font-xirod text-4xl md:text-5xl mb-8">
-              What is <span className="text-sky-700 font-xirod">Aero</span>{" "}
-              <span className="text-red-700 font-xirod">Duel</span>?
+              What is{" "}
+              <span className="text-sky-700 font-vipessrg tracking-wider">
+                Aero
+              </span>{" "}
+              <span className="text-red-700 font-vipessrg tracking-wider">
+                Duel
+              </span>
+              ?
             </h2>
 
             <p className="text-navy font-bold text-lg !text-center !w-full max-w-none">
@@ -44,7 +50,7 @@ export const AboutSection = () => {
               runs the desktop app while all pilots use the mobile app.
             </p>
 
-            <small className="text-navy font-bold block mt-4 !text-center !w-full max-w-none">
+            <small className="text-red-700 font-bold block mt-4 !text-center !w-full max-w-none">
               * Pilots must be experienced and follow all AMA safety guidelines
               and local laws.
             </small>

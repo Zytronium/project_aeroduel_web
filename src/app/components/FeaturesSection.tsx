@@ -17,10 +17,10 @@ export function FeaturesSection() {
           className="max-w-[475px] w-full object-contain"
         />
         <img
-          src="/placeholder_img.png"
+          src="/box-logo-right.svg"
           alt="Placeholder"
-          width={400}
-          height={400}
+          width={600}
+          height={600}
           className="max-w-[475px] w-full object-contain"
         />
       </div>

@@ -17,9 +17,9 @@ export function WhySection() {
             className="max-w-[500px] w-full object-contain"
           />
           <div className="flex-1 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold font-xirod text-shadow-lg text-shadow-black">
+            <h1 className="text-4xl text-gray-300 md:text-5xl font-bold font-xirod text-shadow-lg text-shadow-black">
               Who is{" "}
-              <span className="text-sky-700">
+              <span className="">
                 <h1 className="inline-block text-sky-400 font-vipessrg tracking-wider text-shadow-lg text-shadow-black scale-110 md:scale-[1.15] lg:scale-[1.2] origin-center ml-4">
                   Aero
                 </h1>

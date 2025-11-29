@@ -58,18 +58,6 @@ export function HowItWorksSection() {
               className="max-w-[600px] w-full object-contain"
             />
           </div>
-          <h1
-            className="text-6xl md:text-7xl lg:text-8xl font-bold text-center font-xirod"
-            style={{
-              opacity: isMounted ? opacity : 1,
-              transform: isMounted
-                ? `translateY(${parallaxOffset * 0.3}px)`
-                : "translateY(0)",
-              transition: "transform 0.1s ease-out, opacity 0.1s ease-out",
-            }}
-          >
-            HOW <span className="text-red-700 font-xirod">IT</span> WORKS
-          </h1>
         </div>
       </section>
 
@@ -107,7 +95,7 @@ export function HowItWorksSection() {
       {/* Arduino Section */}
       <section
         className="text-skyblue py-16 px-4 md:px-14 lg:px-16 xl:px-20
-             bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)]"
+             bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)] border-t-8 border-b-4 border-red-700"
       >
         <div className="max-w-6xl mx-auto mb-12">
           <div className="flex flex-col md:flex-row items-center gap-8">
@@ -140,7 +128,7 @@ export function HowItWorksSection() {
       </section>
 
       {/* LoRa Wifi Receiver Section */}
-      <section className="bg-[linear-gradient(-180deg,#7bf8ff,#ffffff,#7bf8ff)] text-navy py-16 px-4 md:px-14 lg:px-16 xl:px-20">
+      <section className="bg-[linear-gradient(-180deg,#7bf8ff,#ffffff,#7bf8ff)] text-navy py-16 px-4 md:px-14 lg:px-16 xl:px-20 border-t-4 border-b-4 border-red-700">
         <div className="max-w-6xl mx-auto mb-12">
           <div className="flex flex-col md:flex-row-reverse items-center gap-8">
             <Image
@@ -174,7 +162,7 @@ export function HowItWorksSection() {
       {/* Camera Section */}
       <section
         className="text-skyblue py-16 px-4 md:px-14 lg:px-16 xl:px-20
-             bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)]"
+             bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)] border-t-4 border-b-4 border-red-700"
       >
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
@@ -207,7 +195,7 @@ export function HowItWorksSection() {
       </section>
 
       {/* Back-end Server Section */}
-      <section className="bg-[linear-gradient(-180deg,#7bf8ff,#ffffff,#7bf8ff)] text-navy py-16 px-4 md:px-14 lg:px-16 xl:px-20">
+      <section className="bg-[linear-gradient(-180deg,#7bf8ff,#ffffff,#7bf8ff)] text-navy py-16 px-4 md:px-14 lg:px-16 xl:px-20 border-t-4 border-b-4 border-red-700">
         <div className="max-w-6xl mx-auto mb-12">
           <div className="flex flex-col md:flex-row-reverse items-center gap-8">
             <Image
@@ -241,7 +229,7 @@ export function HowItWorksSection() {
       {/* Phone App Section */}
       <section
         className="text-skyblue py-16 px-4 md:px-14 lg:px-16 xl:px-20
-             bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)]"
+             bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)] border-t-4 border-b-8 border-red-700"
       >
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-8 mb-12">

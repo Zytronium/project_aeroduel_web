@@ -3,6 +3,7 @@ import { AboutSection } from "@/app/components/AboutSection";
 import { DownloadSection } from "@/app/components/DownloadSection";
 import { DuelingSection } from "@/app/components/DuelingSection";
 import { WhySection } from "@/app/components/WhySection";
+import { PlaneLogoSection } from "@/app/components/PlaneLogoSection";
 import Image from "next/image";
 function TechStackSection() {
   return null;
@@ -28,6 +29,7 @@ export default function Home() {
        The background gradient component is in the HeroSection.
        */}
       <div className="z-1">
+        <PlaneLogoSection />
         <AboutSection />
         <WhySection />
         <DuelingSection />

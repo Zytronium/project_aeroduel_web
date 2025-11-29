@@ -16,10 +16,10 @@ export function DuelingSection() {
             className="max-w-[500px] w-full object-contain"
           />
           <div className="flex-1 text-right">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black">
               Dueling
               <span className="block text-xl md:text-2xl font-normal"></span>
-            </h2>
+            </h1>
             <p className="text-lg leading-relaxed text-shadow-lg text-shadow-black">
               Each plane uses an onboard H7 Cam Plus to visually detect colored
               LEDs on the opposing plane. When the camera “locks on” to the

@@ -1,53 +1,107 @@
+"use client";
+
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
 export function HowItWorksSection() {
+  const [scrollY, setScrollY] = useState(0);
+  const [isMounted, setIsMounted] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    setIsMounted(true);
+
+    const handleScroll = () => {
+      if (sectionRef.current) {
+        const rect = sectionRef.current.getBoundingClientRect();
+        // Calculate how far the section has scrolled past the viewport top
+        // When section is at top of viewport, scrollY = 0
+        // As you scroll down, scrollY increases
+        const relativeScroll = Math.max(0, -rect.top);
+        setScrollY(relativeScroll);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll(); // Initial calculation
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Calculate parallax and fade effects
+  const parallaxOffset = scrollY * 0.5; // Logo moves at 50% of scroll speed
+  const opacity = Math.max(0, Math.min(1, 1 - scrollY / 400)); // Fade out over 400px, but don't go below 0
+  const scale = Math.max(0.9, Math.min(1, 1 - scrollY / 800)); // Scale down as you scroll, but don't go below 0.9
+
   return (
     <div className="w-full">
       {/* Title and Image Section */}
-      <section className="bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)] text-skyblue py-16 px-4 md:px-14 lg:px-16 xl:px-20">
-        <div className="flex flex-col items-center justify-center gap-8 max-w-7xl mx-auto mb-12">
-          <div className="relative flex justify-center w-full">
+      <section
+        ref={sectionRef}
+        className="bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44,#7bf8ff,#7bf8ff)] text-navy px-4 md:px-14 lg:px-16 xl:px-20 relative overflow-hidden pt-8"
+      >
+        <div className="flex flex-col items-center justify-center gap-8 max-w-7xl mx-auto mb-12 min-h-[60vh]">
+          <div
+            className="relative flex justify-center w-full"
+            style={{
+              transform: isMounted
+                ? `translateY(${parallaxOffset}px) scale(${scale})`
+                : "translateY(0) scale(1)",
+              opacity: isMounted ? opacity : 1,
+              transition: "transform 0.1s ease-out, opacity 0.1s ease-out",
+            }}
+          >
             <Image
               src="/images/plane-right.svg"
               alt="jet with crosshair"
               width={400}
               height={400}
-              className="max-w-[475px] w-full object-contain"
+              className="max-w-[600px] w-full object-contain"
             />
           </div>
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-center font-xirod">
+          <h1
+            className="text-6xl md:text-7xl lg:text-8xl font-bold text-center font-xirod"
+            style={{
+              opacity: isMounted ? opacity : 1,
+              transform: isMounted
+                ? `translateY(${parallaxOffset * 0.3}px)`
+                : "translateY(0)",
+              transition: "transform 0.1s ease-out, opacity 0.1s ease-out",
+            }}
+          >
             HOW <span className="text-red-700 font-xirod">IT</span> WORKS
           </h1>
         </div>
       </section>
 
       {/* Flow Chart Section */}
-      <section className="bg-[radial-gradient(circle,#7bf8ff,#ffffff,#7bf8ff)] text-navy py-16 px-4 md:px-14 lg:px-16 xl:px-20">
-        <div className="max-w-3xl mx-auto">
+      <section className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] text-navy pt-10 px-4 md:px-14 lg:px-16 xl:px-20 flex flex-col items-center">
+        <div className="max-w-3xl mx-auto mb-12">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 font-xirod text-shadow-lg">
             Along with <span className="text-red-700 font-xirod">your</span>{" "}
             plane of choice <span className="text-red-700 font-xirod">you</span>{" "}
             will need
           </h1>
         </div>
-        <h4 className="font-bold">I will fix this later</h4>
-        <Image
-          src="/images/flow-chart-placeholder.svg"
-          alt="flow chart"
-          width={800}
-          height={800}
-          className="max-w-[800px] w-full object-contain mb-12"
-        />
-        <h4 className="font-bold text-center md:text-left md:max-w-[90%] lg:max-w-[80%] xl:max-w-[66%]">
-          Explore the complete parts list and get all source code{" "}
-          <a
-            href="/downloads"
-            className="inline text-red-700 hover:text-orange-900 text-xl font-bold transition-colors duration-300"
-          >
-            <span className="text-2xl md:text-3xl">here</span>
-          </a>
-          .
-        </h4>
+        <div className="flex flex-col items-center w-full max-w-3xl mx-auto">
+          <h4 className="font-bold mb-4">I will fix this later</h4>
+          <Image
+            src="/images/flow-chart-placeholder.svg"
+            alt="flow chart"
+            width={800}
+            height={800}
+            className="max-w-[800px] w-full object-contain mb-12"
+          />
+          <h4 className="font-bold text-center max-w-[90%] lg:max-w-[80%] xl:max-w-[66%]">
+            Explore the complete parts list and get all source code{" "}
+            <a
+              href="/downloads"
+              className="inline text-red-700 hover:text-red-500 text-xl font-bold transition-colors duration-300"
+            >
+              <span className="text-2xl md:text-3xl">here</span>
+            </a>
+            .
+          </h4>
+        </div>
       </section>
 
       {/* Arduino Section */}
@@ -202,7 +256,9 @@ export function HowItWorksSection() {
               <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod">
                 Aero Duel Phone App
                 <span className="block text-xl md:text-2xl font-normal">
-                  <span className="text-red-700 font-xirod">(live match interface)</span>
+                  <span className="text-red-700 font-xirod">
+                    (live match interface)
+                  </span>
                 </span>
               </h2>
               <p className="text-lg leading-relaxed">

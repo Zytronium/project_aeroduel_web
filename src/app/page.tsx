@@ -1,7 +1,8 @@
 import { HeroSection } from "@/app/components/HeroSection";
 import { AboutSection } from "@/app/components/AboutSection";
 import { DownloadSection } from "@/app/components/DownloadSection";
-import { FeaturesSection } from "@/app/components/FeaturesSection";
+import { DuelingSection } from "@/app/components/DuelingSection";
+import { WhySection } from "@/app/components/WhySection";
 import Image from "next/image";
 function TechStackSection() {
   return null;
@@ -28,7 +29,8 @@ export default function Home() {
        */}
       <div className="z-1">
         <AboutSection />
-        <FeaturesSection />
+        <WhySection />
+        <DuelingSection />
         <TechStackSection />
         <Roadmap />
         <FollowSection />

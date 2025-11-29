@@ -33,25 +33,31 @@ function Header() {
           </div>
 
           <div className="hidden md:flex gap-8 ml-auto">
-            <Link href="/" className="hover:text-teal transition">
+            <Link href="/" className="hover:text-red-700 transition">
               Home
             </Link>
-            <a href="/#about" className="hover:text-teal transition">
+            <a href="/#about" className="hover:text-red-700 transition">
               About
             </a>
-            <a href="/#features" className="hover:text-teal transition">
+            <a href="/#features" className="hover:text-red-700 transition">
               Features
             </a>
-            <Link href="/how-it-works" className="hover:text-teal transition">
+            <Link
+              href="/how-it-works"
+              className="hover:text-red-700 transition"
+            >
               How It Works
             </Link>
-            <Link href="/what-you-need" className="hover:text-teal transition">
+            <Link
+              href="/what-you-need"
+              className="hover:text-red-700 transition"
+            >
               What You Need
             </Link>
-            <a href="#roadmap" className="hover:text-teal transition">
+            <a href="#roadmap" className="hover:text-red-700 transition">
               Roadmap
             </a>
-            <a href="#download" className="hover:text-teal transition">
+            <a href="#download" className="hover:text-red-700 transition">
               Download
             </a>
           </div>

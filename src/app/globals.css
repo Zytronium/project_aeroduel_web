@@ -88,7 +88,7 @@ h6 {
 }
 
 section {
-  @apply px-4 md:px-14 lg:px-16 xl:px-20 py-2 flex flex-col items-center border-b-4 border-maroon pt-15;
+  @apply px-4 md:px-14 lg:px-16 xl:px-20 py-2 flex flex-col items-center border-b-4 border-red-700 pt-15;
 }
 
 section h2 {

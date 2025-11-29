@@ -42,7 +42,7 @@ export function WhySection() {
             <p className="font-bold text-center md:text-right md:max-w-[90%] lg:max-w-[80%] xl:max-w-[66%]text-shadow-lg text-shadow-black">
               <a
                 href="/Contact"
-                className="inline text-white hover:text-blue-700 text-xl font-bold transition-colors duration-300"
+                className="inline text-white hover:text-blue-800 text-xl font-bold transition-colors duration-300"
               >
                 <span className="text-2xl md:text-3xl text-shadow-lg text-shadow-black pr-2">
                   Contact{" "}

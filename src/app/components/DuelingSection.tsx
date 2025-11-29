@@ -16,7 +16,7 @@ export function DuelingSection() {
             className="max-w-[500px] w-full object-contain"
           />
           <div className="flex-1 text-right">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-red-700 text-black text-center">
               Dueling
               <span className="block text-xl md:text-2xl font-normal"></span>
             </h1>

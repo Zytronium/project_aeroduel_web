@@ -9,7 +9,7 @@ export const AboutSection = () => {
       <div className="max-w-6xl mx-auto mb-12">
         <div className="flex flex-col items-center gap-8">
           <div className="flex-1 space-y-6 text-center w-full max-w-4xl mx-auto">
-            <h1 className="text-white text-shadow-lg text-shadow-black font-xirod text-4xl md:text-5xl mb-8 tracking-wider">
+            <h1 className="text-gray-300 text-shadow-lg text-shadow-black font-xirod text-4xl md:text-5xl mb-8 tracking-wider">
               What is{" "}
               <span className="inline-block text-sky-400 font-vipessrg tracking-wider text-shadow-lg text-shadow-black scale-105 md:scale-[1.15] lg:scale-[1.2] origin-center pl-2">
                 Aero
@@ -20,13 +20,13 @@ export const AboutSection = () => {
               ?
             </h1>
 
-            <p className="text-white font-bold text-lg !text-center !w-full max-w-none text-shadow-lg text-shadow-black">
+            <p className="text-gray-300 font-bold text-lg !text-center !w-full max-w-none text-shadow-lg text-shadow-black">
               Aeroduel merges cutting-edge software engineering with RC model
               aircraft to create an advanced aerial combat system for RC
               aircraft.
             </p>
 
-            <p className="text-white font-bold text-lg !text-center !w-full max-w-none text-shadow-lg text-shadow-black">
+            <p className="text-gray-300 font-bold text-lg !text-center !w-full max-w-none text-shadow-lg text-shadow-black">
               We're equipping high-performance RC fighter jets with camera
               systems that automatically detect targets equipped with Aero Duel
               detection lights. This allows the aircraft to use advanced
@@ -35,7 +35,7 @@ export const AboutSection = () => {
               the ground.
             </p>
 
-            <p className="text-white font-bold text-lg !text-center !w-full max-w-none text-shadow-lg text-shadow-black">
+            <p className="text-gray-300 font-bold text-lg !text-center !w-full max-w-none text-shadow-lg text-shadow-black">
               Our mobile app will allow users to register their planes equipped
               with Aeroduel equipment and enter dogfights by scanning a QR code
               or entering a game pin displayed on the host computer. One player

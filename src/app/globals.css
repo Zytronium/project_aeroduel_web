@@ -121,6 +121,11 @@ section p {
   src: url("/fonts/Xirod.otf");
 }
 
+@font-face {
+  font-family: "VIPESSRG";
+  src: url("/fonts/VIPESSRG.TTF");
+}
+
 .title {
   @apply text-7xl font-thin text-center mb-1;
 }
@@ -131,6 +136,10 @@ section p {
 
 .font-xirod {
   font-family: "Xirod", sans-serif;
+}
+
+.font-vipessrg {
+  font-family: "VIPESSRG", sans-serif;
 }
 
 .btn {

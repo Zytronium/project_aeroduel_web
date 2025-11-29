@@ -9,7 +9,7 @@ export const AboutSection = () => {
       <div className="max-w-6xl mx-auto mb-12">
         <div className="flex flex-col items-center gap-8">
           <Image
-            src="/images/arduino-circle.svg"
+            src="/images/plane-right.svg"
             alt="Arduino Board"
             width={400}
             height={400}

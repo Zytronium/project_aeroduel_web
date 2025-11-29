@@ -9,13 +9,13 @@ export function HeroSection() {
     >
       <div className="flex flex-col items-center justify-center w-full max-w-screen-2xl mx-auto gap-8 mb-12">
         <Image
-          src={Logo}
+          src="/images/aero-duel-logo-stacked.svg"
           width={1500}
           height={600}
           className="w-full max-w-[1300px] object-contain"
           alt="Aeroduel Logo"
         />
-        <p className="subtitle text-gold font-bold">
+        <p className="subtitle text-sky font-bold">
           {" "}
           {/* Hey that rhymes! */}
           The future of RC aerial combat. Real dogfights. Real FPV immersion.

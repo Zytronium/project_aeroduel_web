@@ -16,22 +16,22 @@ export function DuelingSection() {
             className="max-w-[500px] w-full object-contain"
           />
           <div className="flex-1 text-center lg:text-right">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-vipessrg tracking-wider text-red-500 drop-shadow-[0_0_8px_rgba(239,68,68,0.6)] text-shadow-lg text-shadow-black">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-xirod tracking-wider text-red-300 drop-shadow-[0_0_8px_rgba(239,68,68,0.6)] text-shadow-lg text-shadow-black">
               Dueling
             </h1>
-            <p className="text-lg leading-relaxed text-shadow-lg text-shadow-black pb-4 mb-4">
+            <p className="text-lg text-red-200 leading-relaxed text-shadow-lg text-shadow-black pb-4 mb-4">
               Each plane uses an onboard H7 Cam Plus to visually detect colored
               LEDs on the opposing plane. When the camera "locks on" to the
               target color long enough, it registers a hit and sends that data
               in real time to a React-based scoreboard, allowing players to
               track wins, losses, and health.
             </p>
-            <p className="font-bold text-center lg:text-left lg:max-w-[90%] xl:max-w-[80%] text-shadow-lg text-shadow-black">
+            <p className="font-bold text-center lg:text-left lg:max-w-[90%] xl:max-w-[80%] text-shadow-lg text-shadow-black text-red-200">
               <a
                 href="/how-it-works"
-                className="inline text-gray-300 hover:text-red-700 text-xl font-bold transition-colors duration-300"
+                className="inline text-red-200 hover:text-red-700 text-xl font-bold transition-colors duration-300"
               >
-                <span className="text-2xl md:text-3xl text-shadow-lg text-shadow-black">
+                <span className="text-2xl md:text-3xl text-shadow-lg text-shadow-black text-white">
                   Learn{" "}
                 </span>
               </a>

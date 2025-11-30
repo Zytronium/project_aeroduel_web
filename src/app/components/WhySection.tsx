@@ -16,25 +16,25 @@ export function WhySection() {
             className="max-w-[500px] w-full object-contain"
           />
           <div className="flex-1 text-center lg:text-right">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black">
               Who is{" "}
               <span className="inline-block font-vipessrg tracking-wider scale-110 md:scale-[1.15] lg:scale-[1.2] origin-center text-sky-400 drop-shadow-[0_0_8px_rgba(56,189,248,0.6)] text-shadow-lg pl-4">
                 Aero
               </span>
-              <span className="inline-block font-vipessrg tracking-wider scale-110 md:scale-[1.15] lg:scale-[1.2] origin-center text-red-500 drop-shadow-[0_0_8px_rgba(239,68,68,0.6)] text-shadow-lg pl-6 pr-4">
+              <span className="inline-block font-vipessrg tracking-wider scale-110 md:scale-[1.15] lg:scale-[1.2] origin-center text-red-500 drop-shadow-[0_0_8px_rgba(239,68,68,0.6)] text-shadow-lg pl-10 pr-8">
                 Duel
               </span>
               For?
               <span className="block text-xl md:text-2xl font-normal"></span>
-            </h2>
-            <p className="text-lg leading-relaxed pb-6 text-shadow-lg text-shadow-black">
+            </h1>
+            <p className="text-lg text-sky-200 leading-relaxed pb-6 text-shadow-lg text-shadow-black">
               Hobbyists who enjoy RC aircraft and want interactive game-like
               experiences. Makers, engineers, and students interested in
               combining robotics, IoT, and computer vision. Clubs or groups who
               want competitive RC dogfight matches. Or anyone who wants a
               modular system for plane-vs-plane scoring or drone battle games.
             </p>
-            <p className="font-bold text-center lg:text-left lg:max-w-[90%] xl:max-w-[80%] text-shadow-lg text-shadow-black font-bold">
+            <p className="font-bold text-center lg:text-left lg:max-w-[90%] xl:max-w-[80%] text-shadow-lg text-shadow-black text-sky-200">
               <a
                 href="/how-it-works"
                 className="inline text-white hover:text-blue-700 text-xl font-bold transition-colors duration-300"

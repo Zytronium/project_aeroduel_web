@@ -42,7 +42,7 @@ export function HeroSection() {
         >
           <Image
             src="/images/aero-duel-logo-stacked.svg"
-            width={1500}
+            width={1300}
             height={600}
             className="w-full object-contain"
             alt="Aeroduel Logo"

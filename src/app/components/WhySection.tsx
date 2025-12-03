@@ -16,7 +16,7 @@ export function WhySection() {
             className="max-w-[550px] w-full object-contain px-8"
           />
           <div className="flex-1 text-center lg:text-right">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black">
               Who is{" "}
               <span className="inline-block font-vipessrg tracking-wider scale-110 md:scale-[1.15] lg:scale-[1.2] origin-center text-sky-400 drop-shadow-[0_0_8px_rgba(56,189,248,0.6)] text-shadow-lg pl-4">
                 Aero
@@ -34,12 +34,14 @@ export function WhySection() {
               want competitive RC dogfight matches. Or anyone who wants a
               modular system for plane-vs-plane scoring or drone battle games.
             </p>
-            <p className="font-bold text-center lg:text-left lg:max-w-[90%] xl:max-w-[80%] text-shadow-lg text-shadow-black text-sky-200">
+            <p className="font-bold text-center lg:text-left lg:max-w-[90%] xl:max-w-[80%] text-shadow-lg text-shadow-black text-sky-200 text-base sm:text-lg">
               <a
                 href="/how-it-works"
-                className="inline text-white hover:text-blue-700 text-xl font-bold transition-colors duration-300"
+                className="inline text-white hover:text-blue-700 text-lg sm:text-xl font-bold transition-colors duration-300"
               >
-                <span className="text-2xl md:text-3xl">Contact </span>
+                <span className="text-xl sm:text-2xl md:text-3xl">
+                  Contact{" "}
+                </span>
               </a>
               us to get involved!
             </p>

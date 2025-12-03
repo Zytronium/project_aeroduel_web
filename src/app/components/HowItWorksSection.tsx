@@ -65,42 +65,25 @@ export function HowItWorksSection() {
       <section className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] text-navy pt-10 px-4 md:px-14 lg:px-16 xl:px-20 flex flex-col items-center">
         <div className="max-w-3xl mx-auto mb-12">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 font-xirod text-shadow-lg text-shadow-white">
-            Along with <span className="text-red-700 font-xirod">your</span>{" "}
-            plane of choice <span className="text-red-700 font-xirod">you</span>{" "}
-            will need
+            What <span className="text-red-700 font-xirod">you</span> need, and
+            how it <span className="text-red-700 font-xirod">works!</span>{" "}
           </h1>
         </div>
         <div className="flex flex-col items-center w-full max-w-3xl mx-auto">
-          <h4 className="font-bold mb-4">I will fix this later</h4>
           <Image
-            src="/images/flow-chart-placeholder.svg"
+            src="/images/flow-chart-final.svg"
             alt="flow chart"
             width={800}
             height={800}
             className="max-w-[800px] w-full object-contain mb-12"
           />
-          <h4 className="font-bold text-center max-w-[90%] lg:max-w-[80%] xl:max-w-[66%] text-shadow-lg text-shadow-white">
-            Explore the complete parts list and get all source code{" "}
-            <a
-              href="/downloads"
-              className="inline text-navy hover:text-red-700 text-xl font-bold transition-colors duration-300"
-            >
-              <span className="text-2xl md:text-3xl text-shadow-lg text-shadow-white">
-                here
-              </span>
-            </a>
-            .
-          </h4>
         </div>
       </section>
 
-      {/* Arduino Section */}
-      <section
-        className="text-skyblue py-16 px-4 md:px-14 lg:px-16 xl:px-20
-             bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)] border-t-16 border-b-8 border-white"
-      >
+      {/* ESP32 Section */}
+      <section className="bg-[linear-gradient(-180deg,#7bf8ff,#ffffff,#7bf8ff)] text-navy py-16 px-4 md:px-14 lg:px-16 xl:px-20 border-t-0 border-b-16 border-white">
         <div className="max-w-6xl mx-auto mb-12">
-          <div className="flex flex-col md:flex-row items-center gap-8">
+          <div className="flex flex-col md:flex-row-reverse items-center gap-8">
             <Image
               src="/images/arduino-circle.svg"
               alt="Arduino Board"
@@ -108,21 +91,56 @@ export function HowItWorksSection() {
               height={400}
               className="max-w-[500px] w-full object-contain"
             />
-            <div className="flex-1 text-right">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirodtext-shadow-lg text-shadow-black">
+            <div className="flex-1 text-left">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-shadow-lg text-shadow-white font-xirod">
                 ESP32 board
                 <span className="block text-xl md:text-2xl font-normal">
-                  <span className="text-red-700 font-xirod text-shadow-lg text-shadow-black">
+                  <span className="text-red-700 font-xirod">
                     (primary controller)
                   </span>
                 </span>
               </h2>
-              <p className="text-lg leading-relaxed font-bold text-shadow-lg text-shadow-black">
+              <p className="text-lg leading-relaxed font-bold text-shadow-lg text-shadow-white">
                 The ESP32 board serves as the brain of each aircraft. It
                 processes input from the H7 Cam Plus camera to detect hits,
                 manages plane health and hit confirmations, and communicates
                 wirelessly with the base station via the LoRa module. This
                 ensures accurate tracking and synchronization during matches.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Camera Section */}
+      <section
+        className="text-skyblue py-16 px-4 md:px-14 lg:px-16 xl:px-20
+             bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)] border-t-8 border-b-8 border-white"
+      >
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
+            <Image
+              src="/images/camera-circle.svg"
+              alt="camera"
+              width={400}
+              height={400}
+              className="max-w-[400px] w-full object-contain"
+            />
+            <div className="flex-1 text-right">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black">
+                H7 Cam Plus
+                <span className="block text-xl md:text-2xl font-normal">
+                  <span className="text-red-700 font-xirod">
+                    (computer vision sensor)
+                  </span>
+                </span>
+              </h2>
+              <p className="text-lg leading-relaxed font-bold text-shadow-lg text-shadow-black">
+                The H7 Cam Plus camera detects colored LEDs on opposing planes
+                using onboard computer vision algorithms. When a plane is
+                targeted for a sufficient amount of time, the camera signals the
+                ESP32 to register a hit, enabling precise, sunlight-resistant
+                detection.
               </p>
             </div>
           </div>
@@ -161,7 +179,7 @@ export function HowItWorksSection() {
         </div>
       </section>
 
-      {/* Camera Section */}
+      {/* LED Section */}
       <section
         className="text-skyblue py-16 px-4 md:px-14 lg:px-16 xl:px-20
              bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)] border-t-8 border-b-8 border-white"
@@ -169,27 +187,25 @@ export function HowItWorksSection() {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
             <Image
-              src="/images/camera-circle.svg"
-              alt="camera"
+              src="/images/led-circle.svg"
+              alt="LED lights"
               width={400}
               height={400}
               className="max-w-[400px] w-full object-contain"
             />
             <div className="flex-1 text-right">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black">
-                H7 Cam Plus
+                LED Lights
                 <span className="block text-xl md:text-2xl font-normal">
                   <span className="text-red-700 font-xirod">
-                    (computer vision sensor)
+                    (bright lights)
                   </span>
                 </span>
               </h2>
               <p className="text-lg leading-relaxed font-bold text-shadow-lg text-shadow-black">
-                The H7 Cam Plus camera detects colored LEDs on opposing planes
-                using onboard computer vision algorithms. When a plane is
-                targeted for a sufficient amount of time, the camera signals the
-                ESP32 to register a hit, enabling precise, sunlight-resistant
-                detection.
+                Each plane has bright colored LEDs on it. Your opponent's camera
+                looks for that color during the match. If it keeps the LED in
+                view long enough, the system registers a hit.
               </p>
             </div>
           </div>
@@ -259,6 +275,20 @@ export function HowItWorksSection() {
               </p>
             </div>
           </div>
+        </div>
+        <div className="flex justify-center text-center">
+          <h4 className="font-bold text-gray-300 text-center max-w-[90%] lg:max-w-[80%] xl:max-w-[66%] text-shadow-lg text-shadow-black">
+            Explore the complete parts list and get all source code{" "}
+            <a
+              href="/what-you-need"
+              className="inline text-navy hover:text-red-700 text-2xl font-bold transition-colors duration-300"
+            >
+              <span className="text-2xl md:text-3xl text-shadow-lg hover:text-red-700 text-white text-shadow-black">
+                here
+              </span>
+            </a>
+            .
+          </h4>
         </div>
       </section>
     </div>

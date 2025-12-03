@@ -11,6 +11,7 @@ import {
 import { GiTurbine } from "react-icons/gi";
 import { BsPlug, BsTools } from "react-icons/bs";
 import { HiChip } from "react-icons/hi";
+import { ShareCartButton } from "./ShareCartButton";
 
 export function WhatYouNeedSection() {
   const [scrollY, setScrollY] = useState(0);
@@ -48,7 +49,7 @@ export function WhatYouNeedSection() {
         ref={sectionRef}
         className="bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44,#7bf8ff,#7bf8ff)] text-navy px-4 md:px-14 lg:px-16 xl:px-20 relative overflow-hidden pt-8"
       >
-        <div className="flex flex-col items-center justify-center gap-8 max-w-7xl mx-auto mb-12 min-h-[60vh]">
+        <div className="flex flex-col items-center justify-center gap-8 max-w-7xl mx-auto mb-0 min-h-[60vh]">
           <div
             className="relative flex justify-center w-full"
             style={{
@@ -60,76 +61,48 @@ export function WhatYouNeedSection() {
             }}
           >
             <Image
-              src="/images/plane-white-left.svg"
+              src="/images/plane-right.svg"
               alt="jet with crosshair"
               width={400}
               height={400}
-              className="max-w-[750px] w-full object-contain"
+              className="max-w-[800px] w-full object-contain"
             />
           </div>
         </div>
       </section>
 
+      {/* Transition Section */}
+      <section
+        className="h-24 md:h-40 lg:h-56 bg-[linear-gradient(180deg,#7bf8ff,#7bf8ff,#110f44,#000000,#000000,#110f44)]
+ py-10"
+      ></section>
+
       {/* Parts List Section */}
       <section className="bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)] text-navy pt-10 px-4 md:px-14 lg:px-16 xl:px-20 flex flex-col items-center pb-16">
         <div className="max-w-6xl mx-auto mb-12">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 font-xirod text-skyblue text-shadow-lg text-shadow-black">
-            A list of the <span className="text-red-500 font-xirod">parts</span>{" "}
-            we used and where to get{" "}
+            A list of <span className="text-sky-500 font-xirod">the</span>{" "}
+            <span className="text-red-500 font-xirod">parts</span> we used and
+            where to <span className="text-sky-500 font-xirod">get</span>{" "}
             <span className="text-red-500 font-xirod">them!</span>{" "}
           </h1>
 
           {/* Share-a-Cart Section */}
-          <div className="mt-12 p-8 bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)] rounded-xl shadow-xl border-2 border-cyan-400">
-            <div className="text-center">
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 font-vipessrg flex items-center justify-center gap-3 tracking-wide text-shadow-lg text-shadow-black">
-                Everything in one cart
+          <div className="mt-12">
+            <ShareCartButton cartUrl="https://share-a-cart.com/get/E549G" />
+          </div>
+
+          {/* Browse Individually Section */}
+          <div className="mt-8 p-6 bg-[linear-gradient(-45deg,#000000,#000000,#110f44,#110f44,#000000,#000000)] rounded-xl">
+            <div className="text-center space-y-12">
+              <h2 className="text-sky-500 text-xl font-xirod text-shadow-lg text-shadow-black mb-6">
+                Want to browse individually?
               </h2>
-              <p className="text-gray-300 text-lg mb-6 max-w-2xl mx-auto">
-                Here is a single cart containing all the parts needed to get
-                started and see an estimated total cost.
-              </p>
-              <a
-                href="https://share-a-cart.com/get/E549G"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-[linear-gradient(180deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] text-white px-8 py-4 rounded-lg font-bold text-lg hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105 font-xirod"
-              >
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-                  />
-                </svg>
-                <span>View Complete Cart on Amazon</span>
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                  />
-                </svg>
-              </a>
-              <p className="text-red-500 text-sm mt-4">
-                All the parts we used for one plane • Adjusted quantities •
-                Ready to order
-              </p>
-              <p className="text-white text-lg mt-4 font-xirod text-shadow-lg text-shadow-black">
-                Want to browse individually? All items are also linked below.
-                Some items come in multi-packs so keep that in mind.
+              <h4 className="text-red-500 text-xl font-xirod text-shadow-lg text-shadow-black mb-6">
+                All items are also linked below
+              </h4>
+              <p className="text-red-300 text-base text-shadow-lg text-shadow-black">
+                Some items come in multi-packs so keep that in mind
               </p>
             </div>
           </div>

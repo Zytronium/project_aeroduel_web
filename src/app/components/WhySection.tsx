@@ -9,11 +9,11 @@ export function WhySection() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col lg:flex-row-reverse items-center gap-8">
           <Image
-            src="/images/transmitter.svg"
+            src="/images/transmitter-plane.svg"
             alt="RC Transmitter"
             width={400}
             height={400}
-            className="max-w-[375px] w-full object-contain px-8"
+            className="max-w-[550px] w-full object-contain px-8"
           />
           <div className="flex-1 text-center lg:text-right">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black">

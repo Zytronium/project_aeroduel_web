@@ -55,7 +55,7 @@ export function HowItWorksSection() {
               alt="jet with crosshair"
               width={400}
               height={400}
-              className="max-w-[750px] w-full object-contain"
+              className="max-w-[800px] w-full object-contain"
             />
           </div>
         </div>

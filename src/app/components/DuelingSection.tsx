@@ -3,20 +3,20 @@ import Image from "next/image";
 export function DuelingSection() {
   return (
     <section
-      className="flex flex-col items-center text-gray-300 py-16 px-4 md:px-14 lg:px-16 xl:px-20
+      className="flex flex-col items-center text-gray-300 py-8 px-4 md:px-14 lg:px-16 xl:px-20
                  bg-[linear-gradient(-45deg,#000000,#000000,#ad0000,#ad0000,#000000,#000000)] border-t-8 border-b-16 border-white"
     >
-      <div className="max-w-6xl mx-auto mb-12">
+      <div className="max-w-6xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-8">
           <Image
-            src="/images/arduino-circle.svg"
+            src="/images/versus.svg"
             alt="Arduino Board"
             width={400}
             height={400}
-            className="max-w-[500px] w-full object-contain"
+            className="max-w-[425px] w-full object-contain"
           />
           <div className="flex-1 text-center lg:text-right">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-xirod tracking-wider text-red-300 drop-shadow-[0_0_8px_rgba(239,68,68,0.6)] text-shadow-lg text-shadow-black">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-xirod tracking-wider text-gray-200 drop-shadow-[0_0_8px_rgba(239,68,68,0.6)] text-shadow-lg text-shadow-black">
               Dueling
             </h1>
             <p className="text-lg text-red-200 leading-relaxed text-shadow-lg text-shadow-black pb-4 mb-4">
@@ -31,7 +31,7 @@ export function DuelingSection() {
                 href="/how-it-works"
                 className="inline text-red-200 hover:text-red-700 text-xl font-bold transition-colors duration-300"
               >
-                <span className="text-2xl md:text-3xl text-shadow-lg text-shadow-black text-white">
+                <span className="text-2xl md:text-3xl hover:text-orange-700 text-shadow-lg text-shadow-black text-white">
                   Learn{" "}
                 </span>
               </a>

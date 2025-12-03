@@ -55,15 +55,15 @@ export function HowItWorksSection() {
               alt="jet with crosshair"
               width={400}
               height={400}
-              className="max-w-[800px] w-full object-contain"
+              className="max-w-[600px] w-full object-contain"
             />
           </div>
         </div>
       </section>
 
       {/* Flow Chart Section */}
-      <section className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] text-navy pt-10 px-4 md:px-14 lg:px-16 xl:px-20 flex flex-col items-center">
-        <div className="max-w-3xl mx-auto mb-12">
+      <section className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] text-navy pt-10 px-4 md:px-14 lg:px-16 xl:px-20 flex flex-col items-center pb-8">
+        <div className="max-w-3xl mx-auto">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 font-xirod text-shadow-lg text-shadow-white">
             What <span className="text-red-700 font-xirod">you</span> need, and
             how it <span className="text-red-700 font-xirod">works!</span>{" "}
@@ -75,13 +75,13 @@ export function HowItWorksSection() {
             alt="flow chart"
             width={800}
             height={800}
-            className="max-w-[800px] w-full object-contain mb-12"
+            className="mx-auto w-[500px] md:w-[800px] lg:w-[900px] xl:w-[1000px] object-contain pt-8"
           />
         </div>
       </section>
 
       {/* ESP32 Section */}
-      <section className="bg-[linear-gradient(-180deg,#7bf8ff,#ffffff,#7bf8ff)] text-navy py-16 px-4 md:px-14 lg:px-16 xl:px-20 border-t-0 border-b-16 border-white">
+      <section className="bg-[linear-gradient(-180deg,#7bf8ff,#ffffff,#7bf8ff)] text-navy py-16 px-4 md:px-14 lg:px-16 xl:px-20 border-t-16 border-b-16 border-white">
         <div className="max-w-6xl mx-auto mb-12">
           <div className="flex flex-col md:flex-row-reverse items-center gap-8">
             <Image

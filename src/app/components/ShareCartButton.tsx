@@ -11,7 +11,7 @@ interface ShareCartButtonProps {
 export function ShareCartButton({
   cartUrl,
   title = "Everything in one cart",
-  description = "Here is a single cart containing all the parts we used to get started and see an estimated total cost.",
+  description = "Here is a single cart containing all the parts we used to get started, and see an estimated total cost.",
   buttonText = "View Complete Cart on Amazon",
   subText = "All the parts we used for one plane • Adjusted quantities • Ready to order",
 }: ShareCartButtonProps) {

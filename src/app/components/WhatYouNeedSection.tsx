@@ -47,7 +47,7 @@ export function WhatYouNeedSection() {
       {/* Title and Image Section */}
       <section
         ref={sectionRef}
-        className="bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44,#7bf8ff,#7bf8ff)] text-navy px-4 md:px-14 lg:px-16 xl:px-20 relative overflow-hidden pt-8"
+        className="bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44,#7bf8ff,#7bf8ff)] text-navy px-4 md:px-14 lg:px-16 xl:px-20 relative overflow-hidden py-8"
       >
         <div className="flex flex-col items-center justify-center gap-8 max-w-7xl mx-auto mb-0 min-h-[60vh]">
           <div
@@ -65,17 +65,11 @@ export function WhatYouNeedSection() {
               alt="jet with crosshair"
               width={400}
               height={400}
-              className="max-w-[800px] w-full object-contain"
+              className="max-w-[600px] w-full object-contain"
             />
           </div>
         </div>
       </section>
-
-      {/* Transition Section */}
-      <section
-        className="h-24 md:h-40 lg:h-56 bg-[linear-gradient(180deg,#7bf8ff,#7bf8ff,#110f44,#000000,#000000,#110f44)]
- py-10"
-      ></section>
 
       {/* Parts List Section */}
       <section className="bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)] text-navy pt-10 px-4 md:px-14 lg:px-16 xl:px-20 flex flex-col items-center pb-16">

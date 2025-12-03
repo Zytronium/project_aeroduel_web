@@ -86,8 +86,8 @@ export function WhatYouNeedSection() {
                 Everything in one cart
               </h2>
               <p className="text-gray-300 text-lg mb-6 max-w-2xl mx-auto">
-                You can open a single cart containing all the parts needed to
-                get started and see an estimated total cost.
+                Here is a single cart containing all the parts needed to get
+                started and see an estimated total cost.
               </p>
               <a
                 href="https://share-a-cart.com/get/E549G"
@@ -137,7 +137,7 @@ export function WhatYouNeedSection() {
           {/* Parts Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             {/* Battery */}
-            <div className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] rounded-xl shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_30px_rgba(6,182,212,0.8)] transition-all duration-300 overflow-hidden border-2 border-cyan-400/50 opacity-85">
+            <div className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] opacity-85 rounded-xl shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_50px_rgba(6,182,212,1),0_0_80px_rgba(6,182,212,0.6)] hover:scale-[1.02] transition-all duration-300 overflow-hidden border-2 border-cyan-400/50">
               <div className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="shrink-0 w-20 h-20 bg-[linear-gradient(135deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.6)] border-2 border-cyan-400/50">
@@ -158,7 +158,7 @@ export function WhatYouNeedSection() {
                       href="https://a.co/d/0yennlC"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-4 py-2 rounded-lg font-bold hover:from-cyan-600 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
+                      className="inline-flex items-center gap-2 bg-[linear-gradient(90deg,#110f44,#0a0833,#110f44)] hover:bg-[linear-gradient(90deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] text-white px-4 py-2 rounded-lg font-bold transition-all duration-300 shadow-md hover:shadow-lg border border-cyan-400/30"
                     >
                       <span>View on Amazon</span>
                       <svg
@@ -181,7 +181,7 @@ export function WhatYouNeedSection() {
             </div>
 
             {/* EDF Fans */}
-            <div className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] rounded-xl shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_30px_rgba(6,182,212,0.8)] transition-all duration-300 overflow-hidden border-2 border-cyan-400/50 opacity-85">
+            <div className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] opacity-85 rounded-xl shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_50px_rgba(6,182,212,1),0_0_80px_rgba(6,182,212,0.6)] hover:scale-[1.02] transition-all duration-300 overflow-hidden border-2 border-cyan-400/50">
               <div className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="shrink-0 w-20 h-20 bg-[linear-gradient(135deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.6)] border-2 border-cyan-400/50">
@@ -202,7 +202,7 @@ export function WhatYouNeedSection() {
                       href="https://www.amazon.com/XFLY-MODEL-12-Blade-1511-KV5850-Brushless-Outrunner/dp/B0F24SFG38"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-4 py-2 rounded-lg font-bold hover:from-cyan-600 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
+                      className="inline-flex items-center gap-2 bg-[linear-gradient(90deg,#110f44,#0a0833,#110f44)] hover:bg-[linear-gradient(90deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] text-white px-4 py-2 rounded-lg font-bold transition-all duration-300 shadow-md hover:shadow-lg border border-cyan-400/30"
                     >
                       <span>View on Amazon</span>
                       <svg
@@ -225,7 +225,7 @@ export function WhatYouNeedSection() {
             </div>
 
             {/* ESC */}
-            <div className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] rounded-xl shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_30px_rgba(6,182,212,0.8)] transition-all duration-300 overflow-hidden border-2 border-cyan-400/50 opacity-85">
+            <div className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] opacity-85 rounded-xl shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_50px_rgba(6,182,212,1),0_0_80px_rgba(6,182,212,0.6)] hover:scale-[1.02] transition-all duration-300 overflow-hidden border-2 border-cyan-400/50">
               <div className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="shrink-0 w-20 h-20 bg-[linear-gradient(135deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.6)] border-2 border-cyan-400/50">
@@ -246,7 +246,7 @@ export function WhatYouNeedSection() {
                       href="https://a.co/d/42jFjEs"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-4 py-2 rounded-lg font-bold hover:from-cyan-600 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
+                      className="inline-flex items-center gap-2 bg-[linear-gradient(90deg,#110f44,#0a0833,#110f44)] hover:bg-[linear-gradient(90deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] text-white px-4 py-2 rounded-lg font-bold transition-all duration-300 shadow-md hover:shadow-lg border border-cyan-400/30"
                     >
                       <span>View on Amazon</span>
                       <svg
@@ -269,7 +269,7 @@ export function WhatYouNeedSection() {
             </div>
 
             {/* Extension Cables */}
-            <div className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] rounded-xl shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_30px_rgba(6,182,212,0.8)] transition-all duration-300 overflow-hidden border-2 border-cyan-400/50 opacity-85">
+            <div className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] opacity-85 rounded-xl shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_50px_rgba(6,182,212,1),0_0_80px_rgba(6,182,212,0.6)] hover:scale-[1.02] transition-all duration-300 overflow-hidden border-2 border-cyan-400/50">
               <div className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="shrink-0 w-20 h-20 bg-[linear-gradient(135deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.6)] border-2 border-cyan-400/50">
@@ -290,7 +290,7 @@ export function WhatYouNeedSection() {
                       href="https://a.co/d/25Nf96O"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-4 py-2 rounded-lg font-bold hover:from-cyan-600 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
+                      className="inline-flex items-center gap-2 bg-[linear-gradient(90deg,#110f44,#0a0833,#110f44)] hover:bg-[linear-gradient(90deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] text-white px-4 py-2 rounded-lg font-bold transition-all duration-300 shadow-md hover:shadow-lg border border-cyan-400/30"
                     >
                       <span>View on Amazon</span>
                       <svg
@@ -313,7 +313,7 @@ export function WhatYouNeedSection() {
             </div>
 
             {/* Servo Motors */}
-            <div className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] rounded-xl shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_30px_rgba(6,182,212,0.8)] transition-all duration-300 overflow-hidden border-2 border-cyan-400/50 opacity-85">
+            <div className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] opacity-85 rounded-xl shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_50px_rgba(6,182,212,1),0_0_80px_rgba(6,182,212,0.6)] hover:scale-[1.02] transition-all duration-300 overflow-hidden border-2 border-cyan-400/50">
               <div className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="shrink-0 w-20 h-20 bg-[linear-gradient(135deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.6)] border-2 border-cyan-400/50">
@@ -334,7 +334,7 @@ export function WhatYouNeedSection() {
                       href="https://a.co/d/8tBsE81"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-4 py-2 rounded-lg font-bold hover:from-cyan-600 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
+                      className="inline-flex items-center gap-2 bg-[linear-gradient(90deg,#110f44,#0a0833,#110f44)] hover:bg-[linear-gradient(90deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] text-white px-4 py-2 rounded-lg font-bold transition-all duration-300 shadow-md hover:shadow-lg border border-cyan-400/30"
                     >
                       <span>View on Amazon</span>
                       <svg
@@ -357,7 +357,7 @@ export function WhatYouNeedSection() {
             </div>
 
             {/* ESP32 Board */}
-            <div className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] rounded-xl shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_30px_rgba(6,182,212,0.8)] transition-all duration-300 overflow-hidden border-2 border-cyan-400/50 opacity-85">
+            <div className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] opacity-85 rounded-xl shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_50px_rgba(6,182,212,1),0_0_80px_rgba(6,182,212,0.6)] hover:scale-[1.02] transition-all duration-300 overflow-hidden border-2 border-cyan-400/50">
               <div className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="shrink-0 w-20 h-20 bg-[linear-gradient(135deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.6)] border-2 border-cyan-400/50">
@@ -379,7 +379,7 @@ export function WhatYouNeedSection() {
                       href="https://a.co/d/gUpyCbc"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-4 py-2 rounded-lg font-bold hover:from-cyan-600 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
+                      className="inline-flex items-center gap-2 bg-[linear-gradient(90deg,#110f44,#0a0833,#110f44)] hover:bg-[linear-gradient(90deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] text-white px-4 py-2 rounded-lg font-bold transition-all duration-300 shadow-md hover:shadow-lg border border-cyan-400/30"
                     >
                       <span>View on Amazon</span>
                       <svg
@@ -402,7 +402,7 @@ export function WhatYouNeedSection() {
             </div>
 
             {/* Dupont Wires */}
-            <div className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] rounded-xl shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_30px_rgba(6,182,212,0.8)] transition-all duration-300 overflow-hidden border-2 border-cyan-400/50 opacity-85">
+            <div className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] opacity-85 rounded-xl shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_50px_rgba(6,182,212,1),0_0_80px_rgba(6,182,212,0.6)] hover:scale-[1.02] transition-all duration-300 overflow-hidden border-2 border-cyan-400/50">
               <div className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="shrink-0 w-20 h-20 bg-[linear-gradient(135deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.6)] border-2 border-cyan-400/50">
@@ -424,7 +424,7 @@ export function WhatYouNeedSection() {
                       href="https://a.co/d/j8GiUQO"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-4 py-2 rounded-lg font-bold hover:from-cyan-600 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
+                      className="inline-flex items-center gap-2 bg-[linear-gradient(90deg,#110f44,#0a0833,#110f44)] hover:bg-[linear-gradient(90deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] text-white px-4 py-2 rounded-lg font-bold transition-all duration-300 shadow-md hover:shadow-lg border border-cyan-400/30"
                     >
                       <span>View on Amazon</span>
                       <svg
@@ -447,7 +447,7 @@ export function WhatYouNeedSection() {
             </div>
 
             {/* OpenMV Cam */}
-            <div className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] rounded-xl shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_30px_rgba(6,182,212,0.8)] transition-all duration-300 overflow-hidden border-2 border-cyan-400/50 opacity-85">
+            <div className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] opacity-85 rounded-xl shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_50px_rgba(6,182,212,1),0_0_80px_rgba(6,182,212,0.6)] hover:scale-[1.02] transition-all duration-300 overflow-hidden border-2 border-cyan-400/50">
               <div className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="shrink-0 w-20 h-20 bg-[linear-gradient(135deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.6)] border-2 border-cyan-400/50">
@@ -469,7 +469,7 @@ export function WhatYouNeedSection() {
                       href="https://a.co/d/0nletG0"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-4 py-2 rounded-lg font-bold hover:from-cyan-600 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg"
+                      className="inline-flex items-center gap-2 bg-[linear-gradient(90deg,#110f44,#0a0833,#110f44)] hover:bg-[linear-gradient(90deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] text-white px-4 py-2 rounded-lg font-bold transition-all duration-300 shadow-md hover:shadow-lg border border-cyan-400/30"
                     >
                       <span>View on Amazon</span>
                       <svg

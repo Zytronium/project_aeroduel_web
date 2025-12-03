@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import { ShareCartButton } from "./ShareCartButton";
 
 export function HowItWorksSection() {
   const [scrollY, setScrollY] = useState(0);
@@ -126,8 +127,8 @@ export function HowItWorksSection() {
               height={400}
               className="max-w-[400px] w-full object-contain"
             />
-            <div className="flex-1 text-right">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black">
+            <div className="flex-1 text-center md:text-right">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black">
                 H7 Cam Plus
                 <span className="block text-xl md:text-2xl font-normal">
                   <span className="text-red-700 font-xirod">
@@ -193,8 +194,8 @@ export function HowItWorksSection() {
               height={400}
               className="max-w-[400px] w-full object-contain"
             />
-            <div className="flex-1 text-right">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black">
+            <div className="flex-1 text-center md:text-right">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black">
                 LED Lights
                 <span className="block text-xl md:text-2xl font-normal">
                   <span className="text-red-700 font-xirod">
@@ -258,8 +259,8 @@ export function HowItWorksSection() {
               height={400}
               className="max-w-[375px] w-full object-contain"
             />
-            <div className="flex-1 text-right">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black">
+            <div className="flex-1 text-center md:text-right">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black">
                 Aero Duel Phone App
                 <span className="block text-xl md:text-2xl font-normal">
                   <span className="text-red-700 font-xirod">
@@ -276,9 +277,11 @@ export function HowItWorksSection() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center text-center">
+
+        {/* Explore What You Need Page */}
+        <div className="flex justify-center text-center pb-8">
           <h4 className="font-bold text-gray-300 text-center max-w-[90%] lg:max-w-[80%] xl:max-w-[66%] text-shadow-lg text-shadow-black">
-            Explore the complete parts list and get all source code{" "}
+            Explore the complete parts list{" "}
             <a
               href="/what-you-need"
               className="inline text-navy hover:text-red-700 text-2xl font-bold transition-colors duration-300"
@@ -290,6 +293,9 @@ export function HowItWorksSection() {
             .
           </h4>
         </div>
+
+        {/*Share Cart Section */}
+        <ShareCartButton cartUrl={"https://share-a-cart.com/get/E549G"} />
       </section>
     </div>
   );

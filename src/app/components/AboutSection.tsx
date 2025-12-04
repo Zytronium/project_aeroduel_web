@@ -9,11 +9,9 @@ export const AboutSection = () => {
       <div className="max-w-6xl mx-auto mb-12 w-full">
         <div className="flex flex-col items-center gap-8">
           <div className="flex-1 space-y-6 text-center w-full max-w-4xl mx-auto px-2 sm:px-0">
-            <h1 className="text-gray-300 text-shadow-lg text-shadow-black font-xirod text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-2 sm:mb-4 tracking-normal sm:tracking-wide md:tracking-wider px-2">
-              <span className="block font-xirod break-words">
-                What We're Building with
-              </span>
-              <span className="block flex items-center justify-center flex-wrap gap-x-1 sm:gap-x-2 md:gap-x-3 lg:gap-x-4 mt-2 sm:mt-3">
+            <h1 className="text-gray-300 text-shadow-lg text-shadow-black font-xirod text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-2 sm:mb-4 tracking-normal sm:tracking-wide md:tracking-wider px-4">
+              <span className="block font-xirod">What We're Building with</span>
+              <span className="block flex items-center justify-center flex-wrap gap-x-2 sm:gap-x-3 md:gap-x-4 lg:gap-x-6 mt-2 sm:mt-3">
                 <span className="inline-block font-vipessrg tracking-wider scale-100 sm:scale-110 md:scale-[1.15] lg:scale-[1.2] origin-center text-sky-400 drop-shadow-[0_0_8px_rgba(56,189,248,0.6)] text-shadow-lg">
                   Aero
                 </span>

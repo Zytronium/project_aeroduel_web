@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import { ShareCartButton } from "./ShareCartButton";
 
 export function HowItWorksSection() {
   const [scrollY, setScrollY] = useState(0);
@@ -55,15 +56,15 @@ export function HowItWorksSection() {
               alt="jet with crosshair"
               width={400}
               height={400}
-              className="max-w-[750px] w-full object-contain"
+              className="max-w-[600px] w-full object-contain"
             />
           </div>
         </div>
       </section>
 
       {/* Flow Chart Section */}
-      <section className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] text-navy pt-10 px-4 md:px-14 lg:px-16 xl:px-20 flex flex-col items-center">
-        <div className="max-w-3xl mx-auto mb-12">
+      <section className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] text-navy pt-10 px-4 md:px-14 lg:px-16 xl:px-20 flex flex-col items-center pb-8">
+        <div className="max-w-3xl mx-auto">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 font-xirod text-shadow-lg text-shadow-white">
             What <span className="text-red-700 font-xirod">you</span> need, and
             how it <span className="text-red-700 font-xirod">works!</span>{" "}
@@ -75,13 +76,13 @@ export function HowItWorksSection() {
             alt="flow chart"
             width={800}
             height={800}
-            className="max-w-[800px] w-full object-contain mb-12"
+            className="mx-auto w-[500px] md:w-[800px] lg:w-[900px] xl:w-[1000px] object-contain pt-8"
           />
         </div>
       </section>
 
       {/* ESP32 Section */}
-      <section className="bg-[linear-gradient(-180deg,#7bf8ff,#ffffff,#7bf8ff)] text-navy py-16 px-4 md:px-14 lg:px-16 xl:px-20 border-t-0 border-b-16 border-white">
+      <section className="bg-[linear-gradient(-180deg,#7bf8ff,#ffffff,#7bf8ff)] text-navy py-16 px-4 md:px-14 lg:px-16 xl:px-20 border-t-16 border-b-16 border-white">
         <div className="max-w-6xl mx-auto mb-12">
           <div className="flex flex-col md:flex-row-reverse items-center gap-8">
             <Image
@@ -126,8 +127,8 @@ export function HowItWorksSection() {
               height={400}
               className="max-w-[400px] w-full object-contain"
             />
-            <div className="flex-1 text-right">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black">
+            <div className="flex-1 text-center md:text-right">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black">
                 H7 Cam Plus
                 <span className="block text-xl md:text-2xl font-normal">
                   <span className="text-red-700 font-xirod">
@@ -193,8 +194,8 @@ export function HowItWorksSection() {
               height={400}
               className="max-w-[400px] w-full object-contain"
             />
-            <div className="flex-1 text-right">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black">
+            <div className="flex-1 text-center md:text-right">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black">
                 LED Lights
                 <span className="block text-xl md:text-2xl font-normal">
                   <span className="text-red-700 font-xirod">
@@ -258,8 +259,8 @@ export function HowItWorksSection() {
               height={400}
               className="max-w-[375px] w-full object-contain"
             />
-            <div className="flex-1 text-right">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black">
+            <div className="flex-1 text-center md:text-right">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black">
                 Aero Duel Phone App
                 <span className="block text-xl md:text-2xl font-normal">
                   <span className="text-red-700 font-xirod">
@@ -276,9 +277,11 @@ export function HowItWorksSection() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center text-center">
+
+        {/* Explore What You Need Page */}
+        <div className="flex justify-center text-center pb-8">
           <h4 className="font-bold text-gray-300 text-center max-w-[90%] lg:max-w-[80%] xl:max-w-[66%] text-shadow-lg text-shadow-black">
-            Explore the complete parts list and get all source code{" "}
+            Explore the complete parts list{" "}
             <a
               href="/what-you-need"
               className="inline text-navy hover:text-red-700 text-2xl font-bold transition-colors duration-300"
@@ -290,6 +293,9 @@ export function HowItWorksSection() {
             .
           </h4>
         </div>
+
+        {/*Share Cart Section */}
+        <ShareCartButton cartUrl={"https://share-a-cart.com/get/E549G"} />
       </section>
     </div>
   );

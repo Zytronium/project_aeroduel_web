@@ -5,7 +5,10 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-slate-950 border-t border-slate-800 text-gray-300 font-bold">
+    <footer
+      id="contact"
+      className="bg-slate-950 border-t border-slate-800 text-gray-300 font-bold"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Quick Links */}
@@ -34,12 +37,12 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <a
-                  href="#download"
+                <Link
+                  href="/download"
                   className="hover:text-red-700 transition-colors"
                 >
-                  Download
-                </a>
+                  Downloads
+                </Link>
               </li>
             </ul>
           </div>

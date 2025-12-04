@@ -38,13 +38,13 @@ export function HeroSection() {
             opacity: isMounted ? opacity : 1,
             transition: "transform 0.1s ease-out, opacity 0.1s ease-out",
           }}
-          className="w-full max-w-[1300px]"
+          className="w-full max-w-[1300px] mx-auto"
         >
           <Image
             src="/images/aero-duel-logo-stacked.svg"
             width={1300}
             height={600}
-            className="w-full object-contain"
+            className="mx-auto w-[500px] md:w-[800px] lg:w-[900px] xl:w-[1000px] object-contain mt-4"
             alt="Aeroduel Logo"
           />
         </div>

@@ -4,6 +4,7 @@ import { DownloadSection } from "@/app/components/DownloadSection";
 import { DuelingSection } from "@/app/components/DuelingSection";
 import { WhySection } from "@/app/components/WhySection";
 import { PlaneLogoSection } from "@/app/components/PlaneLogoSection";
+import { ShareCartButton } from "./components/ShareCartButton";
 import Image from "next/image";
 function TechStackSection() {
   return null;
@@ -33,9 +34,7 @@ export default function Home() {
         <AboutSection />
         <WhySection />
         <DuelingSection />
-        <TechStackSection />
-        <Roadmap />
-        <FollowSection />
+        <ShareCartButton cartUrl={"https://share-a-cart.com/get/E549G"} />
       </div>
     </>
   );

@@ -14,7 +14,7 @@ export function PlaneLogoSection() {
             width={800}
             height={800}
             sizes="(max-width: 768px) 500px, (max-width: 1024px) 600px, (max-width: 1280px) 700px, 800px"
-            className="w-[500px] md:w-[600px] lg:w-[700px] xl:w-[800px] object-contain mt-8"
+            className="w-[500px] md:w-[500px] lg:w-[600px] xl:w-[700px] object-contain mt-8"
           />
         </div>
       </div>

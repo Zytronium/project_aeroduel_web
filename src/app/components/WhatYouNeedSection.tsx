@@ -43,11 +43,11 @@ export function WhatYouNeedSection() {
   const scale = Math.max(0.9, Math.min(1, 1 - scrollY / 800)); // Scale down as you scroll, but don't go below 0.9
 
   return (
-    <div className="w-full">
+    <div className="w-full overflow-x-hidden">
       {/* Title and Image Section */}
       <section
         ref={sectionRef}
-        className="bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44,#7bf8ff,#7bf8ff)] text-navy px-4 md:px-14 lg:px-16 xl:px-20 relative overflow-hidden py-8"
+        className="bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44,#7bf8ff,#7bf8ff)] text-navy px-4 md:px-14 lg:px-16 xl:px-20 relative overflow-hidden pt-8"
       >
         <div className="flex flex-col items-center justify-center gap-8 max-w-7xl mx-auto mb-0 min-h-[60vh]">
           <div
@@ -65,16 +65,16 @@ export function WhatYouNeedSection() {
               alt="jet with crosshair"
               width={400}
               height={400}
-              className="max-w-[600px] w-full object-contain"
+              className="max-w-[600px] w-full object-contain pb-16"
             />
           </div>
         </div>
       </section>
 
       {/* Parts List Section */}
-      <section className="bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)] text-navy pt-10 px-4 md:px-14 lg:px-16 xl:px-20 flex flex-col items-center pb-16">
-        <div className="max-w-6xl mx-auto mb-12">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 font-xirod text-skyblue text-shadow-lg text-shadow-black">
+      <section className="bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)] text-navy pt-10 px-4 md:px-14 lg:px-16 xl:px-20 flex flex-col items-center pb-16 overflow-x-hidden">
+        <div className="max-w-6xl mx-auto mb-12 w-full">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 font-xirod text-skyblue text-shadow-lg text-shadow-black px-2 break-words">
             A list of <span className="text-sky-500 font-xirod">the</span>{" "}
             <span className="text-red-500 font-xirod">parts</span> we used and
             where to <span className="text-sky-500 font-xirod">get</span>{" "}
@@ -88,14 +88,16 @@ export function WhatYouNeedSection() {
 
           {/* Browse Individually Section */}
           <div className="mt-8 p-6 bg-[linear-gradient(-45deg,#000000,#000000,#110f44,#110f44,#000000,#000000)] rounded-xl">
-            <div className="text-center space-y-12">
-              <h2 className="text-sky-500 text-xl font-xirod text-shadow-lg text-shadow-black mb-6">
+            <div className="text-center">
+              <h2 className="text-sky-500 text-lg sm:text-xl font-xirod text-shadow-lg text-shadow-black">
                 Want to browse individually?
               </h2>
-              <h4 className="text-red-500 text-xl font-xirod text-shadow-lg text-shadow-black mb-6">
+              <div className="h-4"></div>
+              <h4 className="text-red-500 text-lg sm:text-xl font-xirod text-shadow-lg text-shadow-black">
                 All items are also linked below
               </h4>
-              <p className="text-red-300 text-base text-shadow-lg text-shadow-black">
+              <div className="h-4"></div>
+              <p className="text-red-300 text-sm sm:text-base text-shadow-lg text-shadow-black">
                 Some items come in multi-packs so keep that in mind
               </p>
             </div>
@@ -105,43 +107,45 @@ export function WhatYouNeedSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             {/* Battery */}
             <div className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] opacity-85 rounded-xl shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_50px_rgba(6,182,212,1),0_0_80px_rgba(6,182,212,0.6)] hover:scale-[1.02] transition-all duration-300 overflow-hidden border-2 border-cyan-400/50">
-              <div className="p-6">
-                <div className="flex items-start gap-4">
-                  <div className="shrink-0 w-20 h-20 bg-[linear-gradient(135deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.6)] border-2 border-cyan-400/50">
-                    <IoBatteryCharging className="w-12 h-12 text-white" />
+              <div className="p-4 sm:p-6">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+                  <div className="shrink-0 w-16 sm:w-20 h-16 sm:h-20 bg-[linear-gradient(135deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.6)] border-2 border-cyan-400/50">
+                    <IoBatteryCharging className="w-10 sm:w-12 h-10 sm:h-12 text-white" />
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2 font-xirod">
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 font-xirod text-center sm:text-left break-words">
                       4S Lipo Battery
                     </h3>
-                    <p className="text-sm text-red-700 font-semibold mb-2 font-xirod">
+                    <p className="text-xs sm:text-sm text-red-700 font-semibold mb-2 font-xirod text-center sm:text-left">
                       Quantity: 2 per plane
                     </p>
-                    <p className="text-gray-700 text-sm mb-3 font-bold leading-relaxed">
+                    <p className="text-gray-700 text-xs sm:text-sm mb-3 font-bold leading-relaxed text-center sm:text-left break-words">
                       Zeee 14.8V - High discharge rate, lightweight, long cycle
                       life. Powers your RC model with sustained energy.
                     </p>
-                    <a
-                      href="https://a.co/d/0yennlC"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-[linear-gradient(90deg,#110f44,#0a0833,#110f44)] hover:bg-[linear-gradient(90deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] text-white px-4 py-2 rounded-lg font-bold transition-all duration-300 shadow-md hover:shadow-lg border border-cyan-400/30"
-                    >
-                      <span>View on Amazon</span>
-                      <svg
-                        className="w-4 h-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
+                    <div className="flex justify-center sm:justify-start">
+                      <a
+                        href="https://a.co/d/0yennlC"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 bg-[linear-gradient(90deg,#110f44,#0a0833,#110f44)] hover:bg-[linear-gradient(90deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] text-white px-3 sm:px-4 py-2 rounded-lg font-bold text-sm sm:text-base transition-all duration-300 shadow-md hover:shadow-lg border border-cyan-400/30"
                       >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                        />
-                      </svg>
-                    </a>
+                        <span>View on Amazon</span>
+                        <svg
+                          className="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -149,43 +153,45 @@ export function WhatYouNeedSection() {
 
             {/* EDF Fans */}
             <div className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] opacity-85 rounded-xl shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_50px_rgba(6,182,212,1),0_0_80px_rgba(6,182,212,0.6)] hover:scale-[1.02] transition-all duration-300 overflow-hidden border-2 border-cyan-400/50">
-              <div className="p-6">
-                <div className="flex items-start gap-4">
-                  <div className="shrink-0 w-20 h-20 bg-[linear-gradient(135deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.6)] border-2 border-cyan-400/50">
-                    <GiTurbine className="w-12 h-12 text-white" />
+              <div className="p-4 sm:p-6">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+                  <div className="shrink-0 w-16 sm:w-20 h-16 sm:h-20 bg-[linear-gradient(135deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.6)] border-2 border-cyan-400/50">
+                    <GiTurbine className="w-10 sm:w-12 h-10 sm:h-12 text-white" />
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2 font-xirod">
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 font-xirod text-center sm:text-left break-words">
                       EDF Ducted Fans
                     </h3>
-                    <p className="text-sm text-red-700 font-semibold mb-2 font-xirod">
+                    <p className="text-xs sm:text-sm text-red-700 font-semibold mb-2 font-xirod text-center sm:text-left">
                       Quantity: 2 per plane
                     </p>
-                    <p className="text-gray-700 text-sm mb-3 font-bold leading-relaxed">
+                    <p className="text-gray-700 text-xs sm:text-sm mb-3 font-bold leading-relaxed text-center sm:text-left break-words">
                       XFLY-MODEL 45mm 12-Blade with 3S/4S KV5850 Brushless
                       Motor. High-performance jet propulsion system.
                     </p>
-                    <a
-                      href="https://www.amazon.com/XFLY-MODEL-12-Blade-1511-KV5850-Brushless-Outrunner/dp/B0F24SFG38"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-[linear-gradient(90deg,#110f44,#0a0833,#110f44)] hover:bg-[linear-gradient(90deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] text-white px-4 py-2 rounded-lg font-bold transition-all duration-300 shadow-md hover:shadow-lg border border-cyan-400/30"
-                    >
-                      <span>View on Amazon</span>
-                      <svg
-                        className="w-4 h-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
+                    <div className="flex justify-center sm:justify-start">
+                      <a
+                        href="https://www.amazon.com/XFLY-MODEL-12-Blade-1511-KV5850-Brushless-Outrunner/dp/B0F24SFG38"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 bg-[linear-gradient(90deg,#110f44,#0a0833,#110f44)] hover:bg-[linear-gradient(90deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] text-white px-3 sm:px-4 py-2 rounded-lg font-bold text-sm sm:text-base transition-all duration-300 shadow-md hover:shadow-lg border border-cyan-400/30"
                       >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                        />
-                      </svg>
-                    </a>
+                        <span>View on Amazon</span>
+                        <svg
+                          className="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -193,43 +199,45 @@ export function WhatYouNeedSection() {
 
             {/* ESC */}
             <div className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] opacity-85 rounded-xl shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_50px_rgba(6,182,212,1),0_0_80px_rgba(6,182,212,0.6)] hover:scale-[1.02] transition-all duration-300 overflow-hidden border-2 border-cyan-400/50">
-              <div className="p-6">
-                <div className="flex items-start gap-4">
-                  <div className="shrink-0 w-20 h-20 bg-[linear-gradient(135deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.6)] border-2 border-cyan-400/50">
-                    <IoFlash className="w-12 h-12 text-white" />
+              <div className="p-4 sm:p-6">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+                  <div className="shrink-0 w-16 sm:w-20 h-16 sm:h-20 bg-[linear-gradient(135deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.6)] border-2 border-cyan-400/50">
+                    <IoFlash className="w-10 sm:w-12 h-10 sm:h-12 text-white" />
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2 font-xirod">
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 font-xirod text-center sm:text-left break-words">
                       Brushless ESC
                     </h3>
-                    <p className="text-sm text-red-700 font-semibold mb-2 font-xirod">
+                    <p className="text-xs sm:text-sm text-red-700 font-semibold mb-2 font-xirod text-center sm:text-left">
                       Quantity: 2 (one per fan)
                     </p>
-                    <p className="text-gray-700 text-sm mb-3 font-bold leading-relaxed">
+                    <p className="text-gray-700 text-xs sm:text-sm mb-3 font-bold leading-relaxed text-center sm:text-left break-words">
                       HAWK'S WORK 20A Speed Controller with XT60 & 3.5mm plugs.
                       Connects fans to battery and receiver. Super lightweight.
                     </p>
-                    <a
-                      href="https://a.co/d/42jFjEs"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-[linear-gradient(90deg,#110f44,#0a0833,#110f44)] hover:bg-[linear-gradient(90deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] text-white px-4 py-2 rounded-lg font-bold transition-all duration-300 shadow-md hover:shadow-lg border border-cyan-400/30"
-                    >
-                      <span>View on Amazon</span>
-                      <svg
-                        className="w-4 h-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
+                    <div className="flex justify-center sm:justify-start">
+                      <a
+                        href="https://a.co/d/42jFjEs"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 bg-[linear-gradient(90deg,#110f44,#0a0833,#110f44)] hover:bg-[linear-gradient(90deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] text-white px-3 sm:px-4 py-2 rounded-lg font-bold text-sm sm:text-base transition-all duration-300 shadow-md hover:shadow-lg border border-cyan-400/30"
                       >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                        />
-                      </svg>
-                    </a>
+                        <span>View on Amazon</span>
+                        <svg
+                          className="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -237,43 +245,45 @@ export function WhatYouNeedSection() {
 
             {/* Extension Cables */}
             <div className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] opacity-85 rounded-xl shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_50px_rgba(6,182,212,1),0_0_80px_rgba(6,182,212,0.6)] hover:scale-[1.02] transition-all duration-300 overflow-hidden border-2 border-cyan-400/50">
-              <div className="p-6">
-                <div className="flex items-start gap-4">
-                  <div className="shrink-0 w-20 h-20 bg-[linear-gradient(135deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.6)] border-2 border-cyan-400/50">
-                    <BsPlug className="w-12 h-12 text-white" />
+              <div className="p-4 sm:p-6">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+                  <div className="shrink-0 w-16 sm:w-20 h-16 sm:h-20 bg-[linear-gradient(135deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.6)] border-2 border-cyan-400/50">
+                    <BsPlug className="w-10 sm:w-12 h-10 sm:h-12 text-white" />
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2 font-xirod">
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 font-xirod text-center sm:text-left break-words">
                       Extension Cables
                     </h3>
-                    <p className="text-sm text-red-700 font-semibold mb-2 font-xirod">
+                    <p className="text-xs sm:text-sm text-red-700 font-semibold mb-2 font-xirod text-center sm:text-left">
                       Quantity: As needed
                     </p>
-                    <p className="text-gray-700 text-sm mb-3 font-bold leading-relaxed">
+                    <p className="text-gray-700 text-xs sm:text-sm mb-3 font-bold leading-relaxed text-center sm:text-left break-words">
                       Servo extension cables for fans to stretch across inside
                       the plane. Essential for proper cable management.
                     </p>
-                    <a
-                      href="https://a.co/d/25Nf96O"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-[linear-gradient(90deg,#110f44,#0a0833,#110f44)] hover:bg-[linear-gradient(90deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] text-white px-4 py-2 rounded-lg font-bold transition-all duration-300 shadow-md hover:shadow-lg border border-cyan-400/30"
-                    >
-                      <span>View on Amazon</span>
-                      <svg
-                        className="w-4 h-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
+                    <div className="flex justify-center sm:justify-start">
+                      <a
+                        href="https://a.co/d/25Nf96O"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 bg-[linear-gradient(90deg,#110f44,#0a0833,#110f44)] hover:bg-[linear-gradient(90deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] text-white px-3 sm:px-4 py-2 rounded-lg font-bold text-sm sm:text-base transition-all duration-300 shadow-md hover:shadow-lg border border-cyan-400/30"
                       >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                        />
-                      </svg>
-                    </a>
+                        <span>View on Amazon</span>
+                        <svg
+                          className="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -281,43 +291,45 @@ export function WhatYouNeedSection() {
 
             {/* Servo Motors */}
             <div className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] opacity-85 rounded-xl shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_50px_rgba(6,182,212,1),0_0_80px_rgba(6,182,212,0.6)] hover:scale-[1.02] transition-all duration-300 overflow-hidden border-2 border-cyan-400/50">
-              <div className="p-6">
-                <div className="flex items-start gap-4">
-                  <div className="shrink-0 w-20 h-20 bg-[linear-gradient(135deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.6)] border-2 border-cyan-400/50">
-                    <IoSettings className="w-12 h-12 text-white" />
+              <div className="p-4 sm:p-6">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+                  <div className="shrink-0 w-16 sm:w-20 h-16 sm:h-20 bg-[linear-gradient(135deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.6)] border-2 border-cyan-400/50">
+                    <IoSettings className="w-10 sm:w-12 h-10 sm:h-12 text-white" />
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2 font-xirod">
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 font-xirod text-center sm:text-left break-words">
                       Micro Servo Motors
                     </h3>
-                    <p className="text-sm text-red-700 font-semibold mb-2 font-xirod">
+                    <p className="text-xs sm:text-sm text-red-700 font-semibold mb-2 font-xirod text-center sm:text-left">
                       Quantity: 2 per plane
                     </p>
-                    <p className="text-gray-700 text-sm mb-3 font-bold leading-relaxed">
+                    <p className="text-gray-700 text-xs sm:text-sm mb-3 font-bold leading-relaxed text-center sm:text-left break-words">
                       Miuzei MG90S 9G Metal Geared Motors. Controls back wing
                       tilt for precision maneuvering. Kit includes 8 servos.
                     </p>
-                    <a
-                      href="https://a.co/d/8tBsE81"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-[linear-gradient(90deg,#110f44,#0a0833,#110f44)] hover:bg-[linear-gradient(90deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] text-white px-4 py-2 rounded-lg font-bold transition-all duration-300 shadow-md hover:shadow-lg border border-cyan-400/30"
-                    >
-                      <span>View on Amazon</span>
-                      <svg
-                        className="w-4 h-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
+                    <div className="flex justify-center sm:justify-start">
+                      <a
+                        href="https://a.co/d/8tBsE81"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 bg-[linear-gradient(90deg,#110f44,#0a0833,#110f44)] hover:bg-[linear-gradient(90deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] text-white px-3 sm:px-4 py-2 rounded-lg font-bold text-sm sm:text-base transition-all duration-300 shadow-md hover:shadow-lg border border-cyan-400/30"
                       >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                        />
-                      </svg>
-                    </a>
+                        <span>View on Amazon</span>
+                        <svg
+                          className="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -325,44 +337,46 @@ export function WhatYouNeedSection() {
 
             {/* ESP32 Board */}
             <div className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] opacity-85 rounded-xl shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_50px_rgba(6,182,212,1),0_0_80px_rgba(6,182,212,0.6)] hover:scale-[1.02] transition-all duration-300 overflow-hidden border-2 border-cyan-400/50">
-              <div className="p-6">
-                <div className="flex items-start gap-4">
-                  <div className="shrink-0 w-20 h-20 bg-[linear-gradient(135deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.6)] border-2 border-cyan-400/50">
-                    <HiChip className="w-12 h-12 text-white" />
+              <div className="p-4 sm:p-6">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+                  <div className="shrink-0 w-16 sm:w-20 h-16 sm:h-20 bg-[linear-gradient(135deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.6)] border-2 border-cyan-400/50">
+                    <HiChip className="w-10 sm:w-12 h-10 sm:h-12 text-white" />
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2 font-xirod">
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 font-xirod text-center sm:text-left break-words">
                       ESP32 Development Board
                     </h3>
-                    <p className="text-sm text-red-700 font-semibold mb-2 font-xirod">
+                    <p className="text-xs sm:text-sm text-red-700 font-semibold mb-2 font-xirod text-center sm:text-left">
                       Quantity: 1 per plane
                     </p>
-                    <p className="text-gray-700 text-sm mb-3 font-bold leading-relaxed">
+                    <p className="text-gray-700 text-xs sm:text-sm mb-3 font-bold leading-relaxed text-center sm:text-left break-words">
                       HiLetgo ESP32 with WiFi and Bluetooth. 2.4 GHz dual-mode
                       chip with ultra-low power 40nm technology. Brain of the
                       aircraft.
                     </p>
-                    <a
-                      href="https://a.co/d/gUpyCbc"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-[linear-gradient(90deg,#110f44,#0a0833,#110f44)] hover:bg-[linear-gradient(90deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] text-white px-4 py-2 rounded-lg font-bold transition-all duration-300 shadow-md hover:shadow-lg border border-cyan-400/30"
-                    >
-                      <span>View on Amazon</span>
-                      <svg
-                        className="w-4 h-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
+                    <div className="flex justify-center sm:justify-start">
+                      <a
+                        href="https://a.co/d/gUpyCbc"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 bg-[linear-gradient(90deg,#110f44,#0a0833,#110f44)] hover:bg-[linear-gradient(90deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] text-white px-3 sm:px-4 py-2 rounded-lg font-bold text-sm sm:text-base transition-all duration-300 shadow-md hover:shadow-lg border border-cyan-400/30"
                       >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                        />
-                      </svg>
-                    </a>
+                        <span>View on Amazon</span>
+                        <svg
+                          className="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -370,44 +384,46 @@ export function WhatYouNeedSection() {
 
             {/* Dupont Wires */}
             <div className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] opacity-85 rounded-xl shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_50px_rgba(6,182,212,1),0_0_80px_rgba(6,182,212,0.6)] hover:scale-[1.02] transition-all duration-300 overflow-hidden border-2 border-cyan-400/50">
-              <div className="p-6">
-                <div className="flex items-start gap-4">
-                  <div className="shrink-0 w-20 h-20 bg-[linear-gradient(135deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.6)] border-2 border-cyan-400/50">
-                    <BsTools className="w-12 h-12 text-white" />
+              <div className="p-4 sm:p-6">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+                  <div className="shrink-0 w-16 sm:w-20 h-16 sm:h-20 bg-[linear-gradient(135deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.6)] border-2 border-cyan-400/50">
+                    <BsTools className="w-10 sm:w-12 h-10 sm:h-12 text-white" />
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2 font-xirod">
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 font-xirod text-center sm:text-left break-words">
                       Dupont Wire Kit
                     </h3>
-                    <p className="text-sm text-red-700 font-semibold mb-2 font-xirod">
+                    <p className="text-xs sm:text-sm text-red-700 font-semibold mb-2 font-xirod text-center sm:text-left">
                       Quantity: 1 kit
                     </p>
-                    <p className="text-gray-700 text-sm mb-3 font-bold leading-relaxed">
+                    <p className="text-gray-700 text-xs sm:text-sm mb-3 font-bold leading-relaxed text-center sm:text-left break-words">
                       ELEGOO 120pcs multicolored kit. Essential for Arduino
                       connections. Allows servos to reach the receiver with
                       proper connections.
                     </p>
-                    <a
-                      href="https://a.co/d/j8GiUQO"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-[linear-gradient(90deg,#110f44,#0a0833,#110f44)] hover:bg-[linear-gradient(90deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] text-white px-4 py-2 rounded-lg font-bold transition-all duration-300 shadow-md hover:shadow-lg border border-cyan-400/30"
-                    >
-                      <span>View on Amazon</span>
-                      <svg
-                        className="w-4 h-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
+                    <div className="flex justify-center sm:justify-start">
+                      <a
+                        href="https://a.co/d/j8GiUQO"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 bg-[linear-gradient(90deg,#110f44,#0a0833,#110f44)] hover:bg-[linear-gradient(90deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] text-white px-3 sm:px-4 py-2 rounded-lg font-bold text-sm sm:text-base transition-all duration-300 shadow-md hover:shadow-lg border border-cyan-400/30"
                       >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                        />
-                      </svg>
-                    </a>
+                        <span>View on Amazon</span>
+                        <svg
+                          className="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -415,44 +431,46 @@ export function WhatYouNeedSection() {
 
             {/* OpenMV Cam */}
             <div className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] opacity-85 rounded-xl shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_50px_rgba(6,182,212,1),0_0_80px_rgba(6,182,212,0.6)] hover:scale-[1.02] transition-all duration-300 overflow-hidden border-2 border-cyan-400/50">
-              <div className="p-6">
-                <div className="flex items-start gap-4">
-                  <div className="shrink-0 w-20 h-20 bg-[linear-gradient(135deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.6)] border-2 border-cyan-400/50">
-                    <IoCamera className="w-12 h-12 text-white" />
+              <div className="p-4 sm:p-6">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+                  <div className="shrink-0 w-16 sm:w-20 h-16 sm:h-20 bg-[linear-gradient(135deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.6)] border-2 border-cyan-400/50">
+                    <IoCamera className="w-10 sm:w-12 h-10 sm:h-12 text-white" />
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2 font-xirod">
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 font-xirod text-center sm:text-left break-words">
                       OpenMV H7 Cam Plus
                     </h3>
-                    <p className="text-sm text-red-700 font-semibold mb-2 font-xirod">
+                    <p className="text-xs sm:text-sm text-red-700 font-semibold mb-2 font-xirod text-center sm:text-left">
                       Quantity: 1 per plane
                     </p>
-                    <p className="text-gray-700 text-sm mb-3 font-bold leading-relaxed">
+                    <p className="text-gray-700 text-xs sm:text-sm mb-3 font-bold leading-relaxed text-center sm:text-left break-words">
                       Machine vision camera for real-world applications. Program
                       in Python for computer vision and target tracking
                       capabilities.
                     </p>
-                    <a
-                      href="https://a.co/d/0nletG0"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-[linear-gradient(90deg,#110f44,#0a0833,#110f44)] hover:bg-[linear-gradient(90deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] text-white px-4 py-2 rounded-lg font-bold transition-all duration-300 shadow-md hover:shadow-lg border border-cyan-400/30"
-                    >
-                      <span>View on Amazon</span>
-                      <svg
-                        className="w-4 h-4"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
+                    <div className="flex justify-center sm:justify-start">
+                      <a
+                        href="https://a.co/d/0nletG0"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 bg-[linear-gradient(90deg,#110f44,#0a0833,#110f44)] hover:bg-[linear-gradient(90deg,#ff0000,#cc0000,#990000,#cc0000,#ff0000)] text-white px-3 sm:px-4 py-2 rounded-lg font-bold text-sm sm:text-base transition-all duration-300 shadow-md hover:shadow-lg border border-cyan-400/30"
                       >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                        />
-                      </svg>
-                    </a>
+                        <span>View on Amazon</span>
+                        <svg
+                          className="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

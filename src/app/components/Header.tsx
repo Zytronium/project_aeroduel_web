@@ -19,7 +19,7 @@ export function Header() {
     { href: "/", label: "Home", type: "link" as const },
     { href: "/how-it-works", label: "How It Works", type: "link" as const },
     { href: "/what-you-need", label: "What You Need", type: "link" as const },
-    { href: "/download", label: "Download", type: "link" as const },
+    { href: "/download", label: "Downloads", type: "link" as const },
     { href: "#contact", label: "Contact", type: "anchor" as const },
   ];
 

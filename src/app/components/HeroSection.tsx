@@ -44,7 +44,7 @@ export function HeroSection() {
             src="/images/aero-duel-logo-stacked.svg"
             width={1300}
             height={600}
-            className="mx-auto w-[500px] md:w-[800px] lg:w-[900px] xl:w-[1000px] object-contain mt-4"
+            className="mx-auto w-[500px] md:w-[800px] lg:w-[800px] xl:w-[900px] object-contain mt-4"
             alt="Aeroduel Logo"
           />
         </div>

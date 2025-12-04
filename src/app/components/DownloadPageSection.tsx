@@ -37,17 +37,17 @@ export function DownloadPageSection() {
       <HeroSection />
 
       {/* Info Box */}
-      <div className="p-4 sm:p-6 bg-[linear-gradient(-45deg,#000000,#000000,#110f44,#110f44,#000000,#000000)]">
-        <div className="text-center max-w-4xl mx-auto px-6">
-          <h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-xirod text-shadow-lg text-shadow-black text-sky-500">
+      <div className="p-6 bg-[linear-gradient(-45deg,#000000,#000000,#110f44,#110f44,#000000,#000000)]">
+        <div className="text-center max-w-4xl mx-auto">
+          <h2 className="text-sky-500 text-lg sm:text-xl font-xirod text-shadow-lg text-shadow-black px-4 break-words">
             All code is open source and free to use
           </h2>
           <div className="h-4"></div>
-          <h4 className="text-sm sm:text-base md:text-lg lg:text-xl font-xirod text-shadow-lg text-shadow-black text-red-500">
+          <h4 className="text-red-500 text-lg sm:text-xl font-xirod text-shadow-lg text-shadow-black px-4 break-words">
             Build your own Aero Duel system!
           </h4>
           <div className="h-4"></div>
-          <p className="text-xs sm:text-sm md:text-base text-shadow-lg text-shadow-black text-red-300">
+          <p className="text-red-300 text-sm sm:text-base text-shadow-lg text-shadow-black px-4 break-words">
             Check the repositories for setup instructions, wiring diagrams, and
             code examples
           </p>
@@ -57,11 +57,11 @@ export function DownloadPageSection() {
       {/* Download Section */}
       <section className="bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)] text-navy pt-10 px-4 md:px-14 lg:px-16 xl:px-20 flex flex-col items-center pb-16 overflow-x-hidden">
         <div className="max-w-6xl mx-auto mb-12 w-full">
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center mb-12 font-xirod text-skyblue text-shadow-lg text-shadow-black px-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 font-xirod text-skyblue text-shadow-lg text-shadow-black px-2">
             Download{" "}
             <span className="text-red-500 font-xirod">Source Code</span> and{" "}
             <span className="text-red-500 font-xirod">Resources</span>
-          </h1>
+          </h2>
 
           {/* GitHub Repository Links */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
@@ -73,13 +73,13 @@ export function DownloadPageSection() {
                     <FaGithub className="w-10 sm:w-12 h-10 sm:h-12 text-white" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 font-xirod text-center sm:text-left">
+                    <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 font-xirod text-center sm:text-left break-words">
                       Main Repository
                     </h3>
                     <p className="text-xs sm:text-sm text-red-700 font-semibold mb-2 font-xirod text-center sm:text-left">
                       Complete Aero Duel System
                     </p>
-                    <p className="text-gray-700 text-xs sm:text-sm mb-3 font-bold leading-relaxed text-center sm:text-left">
+                    <p className="text-gray-700 text-xs sm:text-sm mb-3 font-bold leading-relaxed text-center sm:text-left break-words">
                       Full source code for the Aero Duel project including
                       aircraft firmware, server, and mobile app.
                     </p>

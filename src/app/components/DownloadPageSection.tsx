@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { FaGithub, FaCode, FaMobileAlt, FaServer } from "react-icons/fa";
 import { IoDownloadOutline } from "react-icons/io5";
+import { HeroSection } from "./HeroSection";
 
 export function DownloadPageSection() {
   const [scrollY, setScrollY] = useState(0);
@@ -33,31 +34,7 @@ export function DownloadPageSection() {
   return (
     <div className="w-full">
       {/* Title and Image Section */}
-      <section
-        ref={sectionRef}
-        className="bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)] text-navy px-4 md:px-14 lg:px-16 xl:px-20 relative overflow-hidden py-8"
-      >
-        <div className="flex flex-col items-center justify-center gap-8 max-w-7xl mx-auto mb-0 min-h-[60vh]">
-          <div
-            className="relative flex justify-center w-full"
-            style={{
-              transform: isMounted
-                ? `translateY(${parallaxOffset}px) scale(${scale})`
-                : "translateY(0) scale(1)",
-              opacity: isMounted ? opacity : 1,
-              transition: "transform 0.1s ease-out, opacity 0.1s ease-out",
-            }}
-          >
-            <Image
-              src="/images/aero-duel-logo-stacked.svg"
-              alt="Aero Duel Logo"
-              width={600}
-              height={600}
-              className="max-w-[800px] w-full object-contain"
-            />
-          </div>
-        </div>
-      </section>
+      <HeroSection />
 
       {/* Info Box */}
       <div className="p-6 bg-[linear-gradient(-45deg,#000000,#000000,#110f44,#110f44,#000000,#000000)]">

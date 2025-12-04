@@ -74,7 +74,7 @@ export function WhatYouNeedSection() {
       {/* Parts List Section */}
       <section className="bg-[linear-gradient(-180deg,#110f44,#000000,#000000,#110f44)] text-navy pt-10 px-4 md:px-14 lg:px-16 xl:px-20 flex flex-col items-center pb-16 overflow-x-hidden">
         <div className="max-w-6xl mx-auto mb-12 w-full">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 font-xirod text-skyblue text-shadow-lg text-shadow-black px-2 break-words">
+          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center mb-12 font-xirod text-skyblue text-shadow-lg text-shadow-black px-6">
             A list of <span className="text-sky-500 font-xirod">the</span>{" "}
             <span className="text-red-500 font-xirod">parts</span> we used and
             where to <span className="text-sky-500 font-xirod">get</span>{" "}

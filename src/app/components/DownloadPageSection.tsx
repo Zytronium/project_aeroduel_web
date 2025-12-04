@@ -37,9 +37,9 @@ export function DownloadPageSection() {
       <HeroSection />
 
       {/* Info Box */}
-      <div className="p-6 bg-[linear-gradient(-45deg,#000000,#000000,#110f44,#110f44,#000000,#000000)]">
+      <div className="p-6 bg-[linear-gradient(-45deg,#000000,#000000,#110f44,#110f44,#000000,#000000)] border-cyan-300 border-3">
         <div className="text-center max-w-4xl mx-auto">
-          <h2 className="text-sky-500 text-lg sm:text-xl font-xirod text-shadow-lg text-shadow-black px-4 break-words">
+          <h2 className="text-ggray-300 text-lg sm:text-xl font-xirod text-shadow-lg text-shadow-black px-4 break-words">
             All code is open source and free to use
           </h2>
           <div className="h-4"></div>
@@ -59,7 +59,7 @@ export function DownloadPageSection() {
         <div className="max-w-6xl mx-auto mb-12 w-full">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 font-xirod text-skyblue text-shadow-lg text-shadow-black px-2">
             Download{" "}
-            <span className="text-red-500 font-xirod">Source Code</span> and{" "}
+            <span className="text-sky-500 font-xirod">Source Code</span> and{" "}
             <span className="text-red-500 font-xirod">Resources</span>
           </h2>
 

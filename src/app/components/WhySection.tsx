@@ -9,20 +9,22 @@ export function WhySection() {
       <div className="max-w-6xl mx-auto w-full">
         <div className="flex flex-col lg:flex-row-reverse items-center gap-8">
           <Image
-            src="/images/transmitter.svg"
+            src="/images/transmitter-plane.svg"
             alt="RC Transmitter"
             width={400}
             height={400}
-            className="max-w-[375px] w-full object-contain px-8"
+            className="max-w-[550px] w-full object-contain px-8"
           />
           <div className="flex-1 text-center lg:text-right">
-            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black px-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 font-xirod text-shadow-lg text-shadow-black">
               Who is{" "}
-              <span className="inline-block font-vipessrg tracking-normal sm:tracking-wider scale-95 sm:scale-100 md:scale-110 lg:scale-[1.15] origin-center text-sky-400 drop-shadow-[0_0_8px_rgba(56,189,248,0.6)] text-shadow-lg pl-1 sm:pl-2 md:pl-4">
-                Aero
-              </span>
-              <span className="inline-block font-vipessrg tracking-normal sm:tracking-wider scale-95 sm:scale-100 md:scale-110 lg:scale-[1.15] origin-center text-red-500 drop-shadow-[0_0_8px_rgba(239,68,68,0.6)] text-shadow-lg pl-2 sm:pl-4 md:pl-6 lg:pl-10">
-                Duel
+              <span className="block flex items-center justify-center flex-wrap gap-x-2 sm:gap-x-3 md:gap-x-4 lg:gap-x-6 mt-2 sm:mt-3">
+                <span className="inline-block font-vipessrg tracking-wider scale-100 sm:scale-110 md:scale-[1.15] lg:scale-[1.2] origin-center text-sky-400 drop-shadow-[0_0_8px_rgba(56,189,248,0.6)] text-shadow-lg">
+                  Aero
+                </span>
+                <span className="inline-block font-vipessrg tracking-wider scale-100 sm:scale-110 md:scale-[1.15] lg:scale-[1.2] origin-center text-red-500 drop-shadow-[0_0_8px_rgba(239,68,68,0.6)] text-shadow-lg pl-2 sm:pl-6">
+                  Duel
+                </span>
               </span>
               For?
               <span className="block text-xl md:text-2xl font-normal"></span>

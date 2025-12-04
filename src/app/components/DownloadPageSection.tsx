@@ -37,17 +37,17 @@ export function DownloadPageSection() {
       <HeroSection />
 
       {/* Info Box */}
-      <div className="p-6 bg-[linear-gradient(-45deg,#000000,#000000,#110f44,#110f44,#000000,#000000)]">
-        <div className="text-center max-w-4xl mx-auto">
-          <h2 className="text-sky-500 text-lg sm:text-xl font-xirod text-shadow-lg text-shadow-black px-4 break-words">
+      <div className="p-4 sm:p-6 bg-[linear-gradient(-45deg,#000000,#000000,#110f44,#110f44,#000000,#000000)]">
+        <div className="text-center max-w-4xl mx-auto px-4">
+          <h2 className="text-base sm:text-lg md:text-xl font-xirod text-shadow-lg text-shadow-black text-sky-500 break-words">
             All code is open source and free to use
           </h2>
           <div className="h-4"></div>
-          <h4 className="text-red-500 text-lg sm:text-xl font-xirod text-shadow-lg text-shadow-black px-4 break-words">
+          <h4 className="text-base sm:text-lg md:text-xl font-xirod text-shadow-lg text-shadow-black text-red-500 break-words">
             Build your own Aero Duel system!
           </h4>
           <div className="h-4"></div>
-          <p className="text-red-300 text-sm sm:text-base text-shadow-lg text-shadow-black px-4 break-words">
+          <p className="text-xs sm:text-sm md:text-base text-shadow-lg text-shadow-black text-red-300 break-words">
             Check the repositories for setup instructions, wiring diagrams, and
             code examples
           </p>

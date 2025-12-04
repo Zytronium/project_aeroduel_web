@@ -15,23 +15,23 @@ export function DuelingSection() {
             height={400}
             className="max-w-[425px] w-full object-contain px-4 sm:px-0"
           />
-          <div className="flex-1 text-center lg:text-right">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-xirod tracking-wider text-gray-200 drop-shadow-[0_0_8px_rgba(239,68,68,0.6)] text-shadow-lg text-shadow-black">
+          <div className="flex-1 text-center lg:text-right w-full">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 font-xirod tracking-wider text-gray-200 drop-shadow-[0_0_8px_rgba(239,68,68,0.6)] text-shadow-lg text-shadow-black px-2 break-words">
               Dueling
             </h1>
-            <p className="text-base sm:text-lg text-red-200 leading-relaxed text-shadow-lg text-shadow-black pb-4 mb-4 px-2 sm:px-0">
+            <p className="text-sm sm:text-base md:text-lg text-red-200 leading-relaxed text-shadow-lg text-shadow-black pb-4 mb-4 px-4 sm:px-2 md:px-0 break-words">
               Each plane uses an onboard H7 Cam Plus to visually detect colored
               LEDs on the opposing plane. When the camera "locks on" to the
               target color long enough, it registers a hit and sends that data
               in real time to a React-based scoreboard, allowing players to
               track wins, losses, and health.
             </p>
-            <p className="font-bold text-center lg:text-left w-full lg:max-w-[90%] xl:max-w-[80%] text-shadow-lg text-shadow-black text-red-200 text-base sm:text-lg px-2 sm:px-0">
+            <p className="font-bold text-center lg:text-left w-full lg:max-w-[90%] xl:max-w-[80%] text-shadow-lg text-shadow-black text-red-200 text-sm sm:text-base md:text-lg px-4 sm:px-2 md:px-0 break-words">
               <a
                 href="/how-it-works"
-                className="inline text-red-200 hover:text-red-700 text-lg sm:text-xl font-bold transition-colors duration-300"
+                className="inline text-red-200 hover:text-red-700 text-base sm:text-lg md:text-xl font-bold transition-colors duration-300"
               >
-                <span className="text-xl sm:text-2xl md:text-3xl hover:text-orange-700 text-shadow-lg text-shadow-black text-white">
+                <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl hover:text-orange-700 text-shadow-lg text-shadow-black text-white">
                   Learn{" "}
                 </span>
               </a>

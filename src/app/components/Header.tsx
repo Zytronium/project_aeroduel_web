@@ -19,7 +19,8 @@ export function Header() {
     { href: "/", label: "Home", type: "link" as const },
     { href: "/how-it-works", label: "How It Works", type: "link" as const },
     { href: "/what-you-need", label: "What You Need", type: "link" as const },
-    { href: "#contact", label: "Download", type: "anchor" as const },
+    { href: "/download", label: "Download", type: "link" as const },
+    { href: "#contact", label: "Contact", type: "anchor" as const },
   ];
 
   return (
@@ -60,7 +61,10 @@ export function Header() {
             >
               What You Need
             </Link>
-            <a href="#download" className="hover:text-red-700 transition">
+            <Link href="/download" className="hover:text-red-700 transition">
+              Downloads
+            </Link>
+            <a href="#contact" className="hover:text-red-700 transition">
               Contact
             </a>
           </div>

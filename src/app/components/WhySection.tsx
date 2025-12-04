@@ -36,7 +36,7 @@ export function WhySection() {
             </p>
             <p className="font-bold text-center lg:text-left lg:max-w-[90%] xl:max-w-[80%] text-shadow-lg text-shadow-black text-sky-200 text-base sm:text-lg">
               <a
-                href="/how-it-works"
+                href="#contact"
                 className="inline text-white hover:text-blue-700 text-lg sm:text-xl font-bold transition-colors duration-300"
               >
                 <span className="text-xl sm:text-2xl md:text-3xl">

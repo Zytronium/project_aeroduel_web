@@ -19,8 +19,8 @@
   --accent-2: var(--accent-primary);
 
   --scrollbar-bg: #001225;
-  --scrollbar-thumb: var(--accent-tertiary);
-  --scrollbar-thumb-hover: #f0c465;
+  --scrollbar-thumb: var(--accent-primary);
+  --scrollbar-thumb-hover: #e61010;
 }
 
 @theme inline {
@@ -161,7 +161,7 @@ h6 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--scrollbar-thumb);
+  background-color: var(--accent-primary);
   border-radius: 20px;
   border: 3px solid var(--scrollbar-bg);
 }

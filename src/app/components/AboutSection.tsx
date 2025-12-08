@@ -4,7 +4,7 @@ export const AboutSection = () => {
   return (
     <section
       className="flex flex-col items-center text-skyblue py-16 px-4 md:px-14 lg:px-16 xl:px-20 overflow-x-hidden
-                 bg-[linear-gradient(180deg,#7bf8ff,#110f44,#000000,#000000,#000000,#000000,#000000)] text-shadow-2xs"
+                 bg-[linear-gradient(180deg,#7bf8ff,#110f44,#000000,#000000,#000000,#000000,#000000)] text-shadow-2xs border-b-6 border-teal"
     >
       <div className="max-w-6xl mx-auto mb-12 w-full">
         <div className="flex flex-col items-center gap-8">

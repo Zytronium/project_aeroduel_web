@@ -4,7 +4,7 @@ export function WhySection() {
   return (
     <section
       className="flex flex-col items-center text-sky py-8 px-4 md:px-14 lg:px-16 xl:px-20 overflow-x-hidden
-				 bg-[linear-gradient(45deg,#000000,#000000,#110f44,#110f44,#000000,#000000)] border-t-16 border-b-8 border-white"
+				 bg-[linear-gradient(45deg,#000000,#000000,#110f44,#110f44,#000000,#000000)] border-t-2 border-b-4 border-teal"
     >
       <div className="max-w-6xl mx-auto w-full">
         <div className="flex flex-col lg:flex-row-reverse items-center gap-8">

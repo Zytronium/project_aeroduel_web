@@ -4,7 +4,7 @@ export function DuelingSection() {
   return (
     <section
       className="flex flex-col items-center text-gray-300 py-8 px-4 md:px-14 lg:px-16 xl:px-20 overflow-x-hidden
-                 bg-[linear-gradient(-45deg,#000000,#000000,#ad0000,#ad0000,#000000,#000000)] border-t-8 border-b-16 border-white"
+                 bg-[linear-gradient(-45deg,#000000,#000000,#ad0000,#ad0000,#000000,#000000)] border-t-4 border-teal"
     >
       <div className="max-w-6xl mx-auto w-full">
         <div className="flex flex-col lg:flex-row items-center gap-8">

@@ -69,6 +69,16 @@ export function Footer() {
                   <span>GitHub Repository</span>
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://linktr.ee/AeroDuel"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-red-700 transition-colors flex items-center gap-2"
+                >
+                  <span>The Team</span>
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -77,7 +87,7 @@ export function Footer() {
             <div className="flex items-center gap-2 mb-4">
               <Image
                 src="/images/flashing-logo-text-stacked-subtle.gif"
-                alt="jet logo"
+                alt="flashing AeroDuel logo"
                 height={40}
                 width={400}
               />

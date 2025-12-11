@@ -11,12 +11,12 @@
 }
 
 :root {
-  --background: var(--background-secondary);
-  --foreground: var(--foreground-secondary);
-  --accent: var(--accent-secondary);
-  --background-2: var(--background-primary);
-  --foreground-2: var(--foreground-primary);
-  --accent-2: var(--accent-primary);
+  --background: var(--background-primary);
+  --foreground: var(--foreground-primary);
+  --accent: var(--accent-primary);
+  --background-2: var(--background-secondary);
+  --foreground-2: var(--foreground-secondary);
+  --accent-2: var(--accent-secondary);
 
   --scrollbar-bg: #001225;
   --scrollbar-thumb: var(--accent-primary);
@@ -40,17 +40,6 @@
   --color-gold: var(--accent-tertiary);
 
   --font-sans: "GltpStarion", sans-serif;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: var(--background-primary);
-    --foreground: var(--foreground-primary);
-    --accent: var(--accent-primary);
-    --background-2: var(--background-secondary);
-    --foreground-2: var(--foreground-secondary);
-    --accent-2: var(--accent-secondary);
-  }
 }
 
 body {

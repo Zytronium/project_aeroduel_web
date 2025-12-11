@@ -66,7 +66,7 @@ export function HowItWorksSection() {
       <section className="bg-[linear-gradient(180deg,#7bf8ff,#ffffff,#7bf8ff)] text-navy pt-10 px-4 md:px-14 lg:px-16 xl:px-20 flex flex-col items-center pb-8">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 font-xirod text-shadow-lg text-shadow-white">
-            What <span className="text-red-700 font-xirod">you</span> need, and
+            What <span className="text-red-700 font-xirod">you</span> need and
             how it <span className="text-red-700 font-xirod">works!</span>{" "}
           </h1>
         </div>

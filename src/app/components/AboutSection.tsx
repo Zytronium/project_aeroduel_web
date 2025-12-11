@@ -11,7 +11,7 @@ export const AboutSection = () => {
           <div className="flex-1 space-y-6 text-center w-full max-w-4xl mx-auto px-2 sm:px-0">
             <h1 className="text-gray-300 text-shadow-lg text-shadow-black font-xirod text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-2 sm:mb-4 tracking-normal sm:tracking-wide md:tracking-wider">
               <span className="block font-xirod">What We're Making with</span>
-              <span className="block flex items-center justify-center flex-wrap gap-x-2 sm:gap-x-3 md:gap-x-4 lg:gap-x-6 mt-2 sm:mt-3">
+              <span className="flex items-center justify-center flex-wrap gap-x-0 sm:gap-x-3 md:gap-x-4 lg:gap-x-6 mt-2 sm:mt-3">
                 <span className="inline-block font-vipessrg tracking-wider scale-100 sm:scale-110 md:scale-[1.15] lg:scale-[1.2] origin-center text-sky-400 drop-shadow-[0_0_8px_rgba(56,189,248,0.6)] text-shadow-lg">
                   Aero
                 </span>
@@ -29,11 +29,10 @@ export const AboutSection = () => {
 
             <p className="text-gray-300 font-bold text-base sm:text-lg !text-center !w-full max-w-none text-shadow-lg text-shadow-black px-2 sm:px-0">
               We're equipping high-performance RC fighter jets with camera
-              systems that automatically detect targets equipped with Aero Duel
-              detection lights. This allows the aircraft to use advanced
-              computer vision to lock onto targets and simulate aerial combat,
-              keeping score via a Wi-Fi connection to the host server back on
-              the ground.
+              systems that automatically detect targets equipped with detection
+              lights. This allows the aircraft to use advanced computer vision
+              to lock onto targets and simulate aerial combat, keeping score via
+              a Wi-Fi connection to the host server back on the ground.
             </p>
 
             <p className="text-gray-300 font-bold text-base sm:text-lg !text-center !w-full max-w-none text-shadow-lg text-shadow-black px-2 sm:px-0">

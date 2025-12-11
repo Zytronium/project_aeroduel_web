@@ -32,10 +32,10 @@ export function DuelingSection() {
                 className="inline text-red-200 hover:text-red-700 text-lg sm:text-xl font-bold transition-colors duration-300"
               >
                 <span className="text-xl sm:text-2xl md:text-3xl hover:text-orange-700 text-shadow-lg text-shadow-black text-white">
-                  Learn{" "}
+                  Learn More{" "}
                 </span>
               </a>
-              more about how it works.
+              about how it works.
             </p>
           </div>
         </div>

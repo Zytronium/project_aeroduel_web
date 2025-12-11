@@ -42,10 +42,10 @@ export function WhySection() {
                 className="inline text-white hover:text-blue-700 text-lg sm:text-xl font-bold transition-colors duration-300"
               >
                 <span className="text-xl sm:text-2xl md:text-3xl">
-                  Contact{" "}
+                  Contact Us{" "}
                 </span>
               </a>
-              us to get involved!
+              to get involved!
             </p>
           </div>
         </div>
